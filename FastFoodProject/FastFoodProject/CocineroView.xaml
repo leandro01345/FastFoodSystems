@@ -1,0 +1,26 @@
+﻿<Window x:Class="FastFoodProject.CocineroView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastFoodProject"
+        mc:Ignorable="d"
+        Title="CocineroView" Height="508.023" Width="781.395" TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="#FF110E0E">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="groupBox" Header="Pedidos" Margin="251,68,10,31"/>
+        <Button x:Name="btnMantenedorOrdenes" Content="Pedidos en cola" VerticalAlignment="Top" Background="#FF206FBD" HorizontalAlignment="Right" Width="215" Margin="0,88,548,0" BorderBrush="#FF1EB2C9" Height="68"/>
+        <Frame x:Name="GerenteFrame" Content="" Margin="251,104,10,31" NavigationUIVisibility="Hidden"/>
+        <TextBlock x:Name="txtTitleCocinero" Margin="25,9,484,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4"><Run Text="Fast food Syste"/><Run Text="m"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="txtVersionCocinero" Margin="499,0,10,-2" TextWrapping="Wrap" FontFamily="Roboto" FontSize="16" FontStyle="Italic" Foreground="#DDB4B4B4" Text="v0.2.0" TextAlignment="Right" Height="28" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnMantenedorOrdenes_Copy" Content="Pedidos listos" VerticalAlignment="Top" Background="#FF206FBD" HorizontalAlignment="Right" Width="215" Margin="0,161,548,0" BorderBrush="#FF1EB2C9" Height="68"/>
+    </Grid>
+</Window>
+

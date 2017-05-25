@@ -20,9 +20,15 @@ namespace FastFoodProject
     /// </summary>
     public partial class Sistema_Ordenes : Page
     {
+        FastFood.Negocio.PedidoCollection pedidos = new FastFood.Negocio.PedidoCollection();
+
         public Sistema_Ordenes()
         {
             InitializeComponent();
+            InitializeComponent();
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));
+            itemCollectionViewSource.Source = pedidos.GetPedidos();
         }
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

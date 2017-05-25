@@ -6,11 +6,28 @@
       xmlns:local="clr-namespace:FastFoodProject"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="600" Title="Sistema_Ordenes">
+    <Page.Resources>
+        <local:FastFoodPedidosSet x:Key="fastFoodPedidosSet"/>
+        <CollectionViewSource x:Key="pedidoViewSource" Source="{Binding Pedido, Source={StaticResource fastFoodPedidosSet}}"/>
+    </Page.Resources>
 
-    <Grid>
+    <Grid DataContext="{StaticResource pedidoViewSource}">
         <GroupBox x:Name="groupBox_Copy" Header="Ordenes" Margin="10,26,19,24" Background="{x:Null}"/>
-
-        <DataGrid x:Name="dataGrid" Margin="10,60,19,24" SelectionChanged="dataGrid_SelectionChanged" Background="#FF302E2E"/>
+        <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,57,19,24" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id_pedidoColumn" Binding="{Binding id_pedido}" Header="id pedido" IsReadOnly="True" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="valor" Width="SizeToHeader"/>
+                <DataGridTemplateColumn x:Name="fechaColumn" Header="fecha" Width="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding fecha, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn x:Name="estadoColumn" Binding="{Binding estado}" Header="estado" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Page>

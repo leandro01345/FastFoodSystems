@@ -99,6 +99,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FastFoodDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FastFoodPedidosSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FastFoodPedidosSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GerentePaginas\MantenedorProductos.xaml.cs">
       <DependentUpon>MantenedorProductos.xaml</DependentUpon>
     </Compile>
@@ -149,6 +154,17 @@
     </None>
     <None Include="FastFoodDataSet.xss">
       <DependentUpon>FastFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FastFoodPedidosSet.xsc">
+      <DependentUpon>FastFoodPedidosSet.xsd</DependentUpon>
+    </None>
+    <None Include="FastFoodPedidosSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FastFoodPedidosSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FastFoodPedidosSet.xss">
+      <DependentUpon>FastFoodPedidosSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

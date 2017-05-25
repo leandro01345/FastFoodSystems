@@ -28,34 +28,12 @@ C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodPro
 C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
 C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
 C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe.config
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.exe
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.pdb
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignColors.dll
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.dll
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.xml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csprojResolveAssemblyReference.cache
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\App.g.cs
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.cache
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.lref
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\App.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.g.resources
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.Properties.Resources.resources
-E:\Ing en software - Fast food systems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csproj.GenerateResource.Cache
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csprojResolveAssemblyReference.cache
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.pdb
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll.config
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.pdb
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.xml

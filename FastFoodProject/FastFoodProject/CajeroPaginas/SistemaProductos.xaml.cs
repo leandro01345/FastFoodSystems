@@ -24,5 +24,10 @@ namespace FastFoodProject
         {
             InitializeComponent();
         }
+
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

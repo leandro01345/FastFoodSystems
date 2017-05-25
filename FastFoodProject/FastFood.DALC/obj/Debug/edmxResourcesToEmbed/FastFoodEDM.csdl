@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FastFoodModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Boleta">
+    <Key>
+      <PropertyRef Name="id_boleta" />
+    </Key>
+    <Property Name="id_boleta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="pedido_id_pedido" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK_Boletas_Pedidos" FromRole="Boleta" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="id_pedido" />
+    </Key>
+    <Property Name="id_pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="valor" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="estado" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="usuario_id_usuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Boleta" Relationship="Self.FK_Boletas_Pedidos" FromRole="Pedido" ToRole="Boleta" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Pedidos_Usuarios" FromRole="Pedido" ToRole="Usuario" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_Productos_Pedidos" FromRole="Pedido" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <Property Name="valor" Type="Int32" Nullable="false" />
+    <Property Name="pedido_id_pedido" Type="Int32" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK_Productos_Pedidos" FromRole="Producto" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario1" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="titular" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="rut" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="tipoUsuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK_Pedidos_Usuarios" FromRole="Usuario" ToRole="Pedido" />
+  </EntityType>
+  <Association Name="FK_Boletas_Pedidos">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="1" />
+    <End Role="Boleta" Type="Self.Boleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="id_pedido" />
+      </Principal>
+      <Dependent Role="Boleta">
+        <PropertyRef Name="pedido_id_pedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedidos_Usuarios">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="usuario_id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Productos_Pedidos">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="id_pedido" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="pedido_id_pedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FastFoodEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Boleta" EntityType="Self.Boleta" />
+    <EntitySet Name="Pedido" EntityType="Self.Pedido" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_Boletas_Pedidos" Association="Self.FK_Boletas_Pedidos">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Boleta" EntitySet="Boleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedidos_Usuarios" Association="Self.FK_Pedidos_Usuarios">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Productos_Pedidos" Association="Self.FK_Productos_Pedidos">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

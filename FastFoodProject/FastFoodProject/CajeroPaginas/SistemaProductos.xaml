@@ -12,6 +12,7 @@
         <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="228"/>
         <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="248,26,19,24" Background="{x:Null}"/>
         <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="228" Height="69" VerticalAlignment="Bottom" Background="#FF55459B"/>
+        <DataGrid x:Name="dataGrid" Margin="262,66,34,38" SelectionChanged="dataGrid_SelectionChanged"/>
 
     </Grid>
 </Page>

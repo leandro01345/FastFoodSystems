@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -144,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CocineroPaginas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FastFood.Negocio\FastFood.Negocio.csproj">
+      <Project>{98fe594b-a3d0-4501-bb7c-a326c2c3c68e}</Project>
+      <Name>FastFood.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodProject", "FastFoodProject\FastFoodProject.csproj", "{BCB6DC15-21D0-403B-B6A7-3EA81FAF713E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.DALC", "FastFood.DALC\FastFood.DALC.csproj", "{9F7D1C8A-E6CA-4854-92F5-22D5927224FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.Negocio", "FastFood.Negocio\FastFood.Negocio.csproj", "{98FE594B-A3D0-4501-BB7C-A326C2C3C68E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BCB6DC15-21D0-403B-B6A7-3EA81FAF713E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB6DC15-21D0-403B-B6A7-3EA81FAF713E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB6DC15-21D0-403B-B6A7-3EA81FAF713E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7D1C8A-E6CA-4854-92F5-22D5927224FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7D1C8A-E6CA-4854-92F5-22D5927224FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7D1C8A-E6CA-4854-92F5-22D5927224FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7D1C8A-E6CA-4854-92F5-22D5927224FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FE594B-A3D0-4501-BB7C-A326C2C3C68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FE594B-A3D0-4501-BB7C-A326C2C3C68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FE594B-A3D0-4501-BB7C-A326C2C3C68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FE594B-A3D0-4501-BB7C-A326C2C3C68E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

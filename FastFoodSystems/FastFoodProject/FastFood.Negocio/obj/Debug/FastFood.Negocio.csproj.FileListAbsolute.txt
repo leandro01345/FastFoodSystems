@@ -1,0 +1,11 @@
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.dll.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.pdb

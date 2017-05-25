@@ -1,0 +1,32 @@
+﻿<Page x:Class="FastFoodProject.Sistema_Productos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FastFoodProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+      Title="Sistema_Productos">
+    <Page.Resources>
+        <CollectionViewSource x:Key="ItemCollectionViewSource" CollectionViewType="ListCollectionView"/>
+        <local:FastFoodDataSet x:Key="fastFoodDataSet"/>
+        <CollectionViewSource x:Key="productoViewSource" Source="{Binding Producto, Source={StaticResource fastFoodDataSet}}"/>
+    </Page.Resources>
+
+    <Grid DataContext="{StaticResource productoViewSource}">
+        <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="228"/>
+        <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="248,26,19,24" Background="{x:Null}"/>
+        <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="228" Height="69" VerticalAlignment="Bottom" Background="#FF55459B"/>
+        <DataGrid x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="248,60,19,24" RowDetailsVisibilityMode="VisibleWhenSelected" AllowDrop="True" SelectionChanged="productoDataGrid_SelectionChanged" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding nombre}" Header="nombre" Width="200"/>
+                <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="valor" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseLeftButtonDown" Handler="Row_DoubleClick"/>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+        </DataGrid>
+    </Grid>
+</Page>

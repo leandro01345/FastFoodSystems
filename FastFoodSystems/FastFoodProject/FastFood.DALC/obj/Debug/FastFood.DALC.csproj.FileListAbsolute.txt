@@ -1,0 +1,8 @@
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\bin\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\bin\Debug\FastFood.DALC.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\bin\Debug\EntityFramework.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\bin\Debug\EntityFramework.xml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\obj\Debug\FastFood.DALC.csprojResolveAssemblyReference.cache
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\obj\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFood.DALC\obj\Debug\FastFood.DALC.pdb

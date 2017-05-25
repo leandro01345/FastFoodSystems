@@ -1,0 +1,79 @@
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe.config
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.pdb
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.g.cs
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\App.g.cs
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.cache
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.lref
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.baml
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.g.resources
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.Properties.Resources.resources
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csproj.GenerateResource.Cache
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.exe
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignColors.dll
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+c:\users\yisus\documents\visual studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\App.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csprojResolveAssemblyReference.cache
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.dll
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.pdb
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll.config
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.pdb
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Yisus\Documents\Visual Studio 2017\Projects\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.xml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.exe
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFoodProject.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignColors.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csprojResolveAssemblyReference.cache
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\App.g.cs
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.cache
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject_MarkupCompile.lref
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\App.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.g.resources
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.Properties.Resources.resources
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csproj.GenerateResource.Cache
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.exe
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.dll
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.pdb
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\FastFood.Negocio.dll.config
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\EntityFramework.xml
+C:\Users\Yisus\Desktop\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GeneratedInternalTypeHelper.g.cs

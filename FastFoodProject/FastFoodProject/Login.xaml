@@ -14,12 +14,12 @@
                 <ColumnDefinition Width="166*"/>
             </Grid.ColumnDefinitions>
             <Label Content="Login" HorizontalAlignment="Left" Margin="17,26,0,0" VerticalAlignment="Top" Width="124" FontSize="20" FontFamily="Rockwell" BorderBrush="#FFD8C6C6" Foreground="#DDF5EFEF" Grid.Column="1" Grid.ColumnSpan="2"/>
-            <TextBox HorizontalAlignment="Left" Height="35" Margin="24,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Background="#FF595151"/>
+            <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="35" Margin="24,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Background="#FF595151"/>
             <Label Content="UserName" HorizontalAlignment="Left" Margin="19,65,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF" Grid.ColumnSpan="2"/>
             <Label Content="Password" HorizontalAlignment="Left" Margin="19,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,-0.347" Foreground="#DDF7F6F6" BorderBrush="#FFF3EEEE" Grid.ColumnSpan="2"/>
-            <Button Content="Submit" HorizontalAlignment="Left" Margin="0,216,0,0" VerticalAlignment="Top" Width="107" Background="#FF46434B" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="#FF482B7A"/>
+            <Button Content="Submit" HorizontalAlignment="Left" Margin="0,216,0,0" VerticalAlignment="Top" Width="107" Background="#FF46434B" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="#FF482B7A" Click="Button_Click_1"/>
             <StackPanel HorizontalAlignment="Left" Height="204" Margin="24,26,-7,0" VerticalAlignment="Top" Width="235" Grid.ColumnSpan="3"/>
-            <PasswordBox HorizontalAlignment="Right" Margin="0,166,29,0" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Height="35" Background="#FF595151"/>
+            <PasswordBox x:Name="txtPwd" HorizontalAlignment="Right" Margin="0,166,29,0" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Height="35" Background="#FF595151"/>
         </Grid>
     </Border>
 </Window>

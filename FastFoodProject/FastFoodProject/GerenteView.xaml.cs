@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FastFood.Negocio;
 
 namespace FastFoodProject
 {
@@ -20,9 +21,13 @@ namespace FastFoodProject
     /// </summary>
     public partial class GerenteView : Window
     {
-        public GerenteView()
+        
+
+        public GerenteView(Usuario usuarioGerente)
         {
             InitializeComponent();
+           
+            
         }
 
         private void btnMantenedorProductos_Click(object sender, RoutedEventArgs e)

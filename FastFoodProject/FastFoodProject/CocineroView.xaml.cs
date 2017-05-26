@@ -20,7 +20,7 @@ namespace FastFoodProject
     /// </summary>
     public partial class CocineroView : Window
     {
-        public CocineroView(Usuario usuarioCocinero)
+        public CocineroView(FastFood.DALC.Usuario usuarioCocinero)
         {
             InitializeComponent();
         }

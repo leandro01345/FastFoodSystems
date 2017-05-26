@@ -5,21 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastFoodProject"
         mc:Ignorable="d"
-        Title="Login" Height="327.66" Width="300" Background="#FF0D225B">
-    <Border Background="#3e3137" CornerRadius="20" Margin="20">
-        <Grid Background="#FF232523">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="73*"/>
-                <ColumnDefinition Width="53*"/>
-                <ColumnDefinition Width="166*"/>
-            </Grid.ColumnDefinitions>
-            <Label Content="Login" HorizontalAlignment="Left" Margin="17,26,0,0" VerticalAlignment="Top" Width="124" FontSize="20" FontFamily="Rockwell" BorderBrush="#FFD8C6C6" Foreground="#DDF5EFEF" Grid.Column="1" Grid.ColumnSpan="2"/>
-            <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="35" Margin="24,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Background="#FF595151"/>
-            <Label Content="UserName" HorizontalAlignment="Left" Margin="19,65,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF" Grid.ColumnSpan="2"/>
-            <Label Content="Password" HorizontalAlignment="Left" Margin="19,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,-0.347" Foreground="#DDF7F6F6" BorderBrush="#FFF3EEEE" Grid.ColumnSpan="2"/>
-            <Button Content="Submit" HorizontalAlignment="Left" Margin="0,216,0,0" VerticalAlignment="Top" Width="107" Background="#FF46434B" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="#FF482B7A" Click="Button_Click_1"/>
-            <StackPanel HorizontalAlignment="Left" Height="204" Margin="24,26,-7,0" VerticalAlignment="Top" Width="235" Grid.ColumnSpan="3"/>
-            <PasswordBox x:Name="txtPwd" HorizontalAlignment="Right" Margin="0,166,29,0" VerticalAlignment="Top" Width="199" Grid.ColumnSpan="3" Height="35" Background="#FF595151"/>
-        </Grid>
-    </Border>
+        Title="Login" Height="327.66" Width="300" Background="#FF232523">
+    <Grid Background="#FF232523" Margin="1,1,2,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="82,31,0,0" VerticalAlignment="Top" Width="124" FontSize="20" FontFamily="Rockwell" BorderBrush="#FFD8C6C6" Foreground="#DDF5EFEF" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="35" Margin="41,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Background="#FF595151"/>
+        <Label Content="UserName" HorizontalAlignment="Left" Margin="41,64,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="41,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,-0.347" Foreground="#DDF7F6F6" BorderBrush="#FFF3EEEE"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="99,233,0,0" VerticalAlignment="Top" Width="107" Background="#FF46434B" BorderBrush="#FF482B7A" Click="Button_Click_1"/>
+        <PasswordBox x:Name="txtPwd" HorizontalAlignment="Right" Margin="0,166,49,0" VerticalAlignment="Top" Width="199" Height="35" Background="#FF595151"/>
+    </Grid>
 </Window>

@@ -21,7 +21,7 @@
         <Button x:Name="button_Copy" Content="Ordenes" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,160,0" BorderBrush="#FF610C2D" Click="button_Copy_Click"/>
         <Button x:Name="button_Copy1" Content="Productos" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" BorderBrush="#FF610C2D" Click="button_Copy1_Click" Margin="0,11,20,0"/>
         <Frame x:Name="frame" Content="" Margin="25,21.5,24,28" Navigated="frame_Navigated" NavigationUIVisibility="Hidden" Grid.Row="1"/>
-        <TextBlock x:Name="textBlock" Margin="25,9,484,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4"><Run Text="Fast food System"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock" Margin="25,15,484,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4"><Run Text="Fast food System"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="textBlock_Copy" Margin="499,0,10,-2" TextWrapping="Wrap" FontFamily="Roboto" FontSize="16" FontStyle="Italic" Foreground="#DDB4B4B4" Text="v0.2.0" TextAlignment="Right" Height="28" VerticalAlignment="Bottom" Grid.Row="1"/>
         <Button x:Name="button_Copy2" Content="Mi perfil" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,300,0" BorderBrush="#FF610C2D" Click="button_Copy_Click" ></Button>
         <materialDesign:PackIcon Kind="Account" Height="22" Width="40" Margin="0,15,396,0" HorizontalAlignment="Right" />

@@ -21,14 +21,18 @@ namespace FastFoodProject
     /// </summary>
     public partial class Sistema_Productos : Page
     {
+        //Variables para gestionar la aplicacion de los productos
         ProductoCollection productos = new ProductoCollection();
-        List<FastFood.DALC.Producto> carritoProductos = new List<FastFood.DALC.Producto>();
+        List<FastFood.DALC.Producto> carritoProductos;
         int totalPagar;
+        
+        //Constructores
         public Sistema_Productos()
         {
             InitializeComponent();
             ActualizarProductos();
             totalPagar = 0;
+            carritoProductos = productos.GetProductos();
         }
         private void ActualizarProductos()
         {

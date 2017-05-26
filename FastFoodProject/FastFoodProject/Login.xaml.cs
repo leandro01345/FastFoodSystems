@@ -29,59 +29,56 @@ namespace FastFoodProject
             InitializeComponent();
         }
        
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            List<FastFood.Negocio.Usuario> usu = new List<FastFood.Negocio.Usuario>();
-            List<UsuarioCollection> usuario = new List<UsuarioCollection>();
-         
+            List<FastFood.DALC.Usuario> usuariosList = new List<FastFood.DALC.Usuario>();
+   
             try
             {
-                
 
-                foreach (FastFood.Negocio.Usuario usuarios in usu)
+
+                foreach (FastFood.DALC.Usuario usuario in usuariosList)
                 {
-                    if (usuarios.usuario1 == txtUserName.Text && usuarios.password == txtPwd.ToString())
+                    if (usuario.usuario1 == txtUserName.Text && usuario.password == txtPwd.ToString())
                     {
-                        
+
                         this.Close();
-                        if (usuarios.tipoUsuario==1)
+                        if (usuario.tipoUsuario == 1)
                         {
-                            
-                            MainWindow cajero = new MainWindow(usuarios);
+
+                            MainWindow cajero = new MainWindow(usuario);
                             cajero.Show();
                         }
-                        if (usuarios.tipoUsuario == 2)
+                        if (usuario.tipoUsuario == 2)
                         {
-                            CocineroView cocinero = new CocineroView(usuarios);
+                            CocineroView cocinero = new CocineroView(usuario);
                             cocinero.Show();
-                            
+
                         }
-                        if (usuarios.tipoUsuario == 3)
+                        if (usuario.tipoUsuario == 3)
                         {
-                            
-                            GerenteView gerente = new GerenteView(usuarios);
+
+                            GerenteView gerente = new GerenteView(usuario);
                             gerente.Show();
-                        
-                            
+
+
                         }
 
                     }
                 }
-                
-                
 
-               
-               
+
+
+
+
 
             }
             catch (Exception)
             {
 
-               
+
             }
-
         }
-
-      
     }
 }

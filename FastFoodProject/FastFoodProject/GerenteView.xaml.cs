@@ -23,7 +23,7 @@ namespace FastFoodProject
     {
         
 
-        public GerenteView(Usuario usuarioGerente)
+        public GerenteView(FastFood.DALC.Usuario usuarioGerente)
         {
             InitializeComponent();
            

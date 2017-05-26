@@ -20,7 +20,12 @@ namespace FastFoodProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(Usuario usuarioCajero)
+        public MainWindow(FastFood.DALC.Usuario usuarioCajero)
+        {
+            InitializeComponent();
+            this.frame.Content = new Sistema_Productos();
+        }
+        public MainWindow()
         {
             InitializeComponent();
             this.frame.Content = new Sistema_Productos();

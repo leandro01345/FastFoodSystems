@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FastFood.Negocio
 {
-    class Producto
+    public class Producto
     {
         public int id_producto;
         public string nombre;

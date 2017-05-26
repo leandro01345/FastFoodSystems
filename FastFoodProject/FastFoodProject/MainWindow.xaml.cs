@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using FastFood.Negocio;
 namespace FastFoodProject
 {
     /// <summary>
@@ -20,7 +20,7 @@ namespace FastFoodProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(Usuario usuarioCajero)
         {
             InitializeComponent();
             this.frame.Content = new Sistema_Productos();

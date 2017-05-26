@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FastFood.Negocio;
 
 namespace FastFoodProject
 {
@@ -19,7 +20,7 @@ namespace FastFoodProject
     /// </summary>
     public partial class CocineroView : Window
     {
-        public CocineroView()
+        public CocineroView(Usuario usuarioCocinero)
         {
             InitializeComponent();
         }

@@ -117,3 +117,5 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csproj.GenerateResource.Cache
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.exe
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\Login.g.cs
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\Login.baml

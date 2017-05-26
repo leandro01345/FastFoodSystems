@@ -6,27 +6,35 @@
       xmlns:local="clr-namespace:FastFoodProject"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="600"
-      Title="Sistema_Productos">
+      Title="Sistema_Productos"
+      xmlns:dd="urn:gong-wpf-dragdrop">
     <Page.Resources>
         <CollectionViewSource x:Key="ItemCollectionViewSource" CollectionViewType="ListCollectionView"/>
         <local:FastFoodDataSet x:Key="fastFoodDataSet"/>
         <CollectionViewSource x:Key="productoViewSource" Source="{Binding Producto, Source={StaticResource fastFoodDataSet}}"/>
     </Page.Resources>
 
-    <Grid DataContext="{StaticResource productoViewSource}">
+    <Grid>
         <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="228"/>
         <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="248,26,19,24" Background="{x:Null}"/>
         <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="228" Height="69" VerticalAlignment="Bottom" Background="#FF55459B"/>
-        <DataGrid x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="248,60,19,24" RowDetailsVisibilityMode="VisibleWhenSelected" AllowDrop="True" SelectionChanged="productoDataGrid_SelectionChanged" IsReadOnly="True">
+        <DataGrid DataContext="{StaticResource productoViewSource}" x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" 
+                  Margin="248,60,19,24" RowDetailsVisibilityMode="VisibleWhenSelected" AllowDrop="True" SelectionChanged="productoDataGrid_SelectionChanged" IsReadOnly="True"
+                  dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding nombre}" Header="Nombre" Width="200"/>
                 <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="Precio" Width="SizeToHeader"/>
             </DataGrid.Columns>
-            <DataGrid.ItemContainerStyle>
-                <Style TargetType="DataGridRow">
-                    <EventSetter Event="MouseLeftButtonDown" Handler="Row_DoubleClick"/>
-                </Style>
-            </DataGrid.ItemContainerStyle>
         </DataGrid>
+        
+        <DataGrid x:Name="productoDataGrid_Copy" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" 
+            Margin="0,60,0,74" RowDetailsVisibilityMode="VisibleWhenSelected" IsReadOnly="True"
+            dd:DragDrop.IsDragSource="False" dd:DragDrop.IsDropTarget="True" HorizontalAlignment="Left" Width="228">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="nombreColumn1" Binding="{Binding nombre}" Header="Nombre" Width="120"/>
+                <DataGridTextColumn x:Name="valorColumn1" Binding="{Binding valor}" Header="Precio" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Page>

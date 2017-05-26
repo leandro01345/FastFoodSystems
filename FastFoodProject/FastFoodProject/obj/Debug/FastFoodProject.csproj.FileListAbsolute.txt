@@ -119,3 +119,6 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\Login.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\Login.baml
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.dll
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.pdb
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.xml

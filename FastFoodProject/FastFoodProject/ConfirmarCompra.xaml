@@ -1,0 +1,18 @@
+﻿<Window x:Class="FastFoodProject.ConfirmarCompra"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastFoodProject"
+        mc:Ignorable="d"
+        Title="ConfirmarCompra" Height="404.5" Width="508" ResizeMode="NoResize">
+    <Grid Background="#FF131313">
+        <TextBox x:Name="txtMontoIngresado" HorizontalAlignment="Left" Height="44" Margin="158,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="0" Foreground="White" GotFocus="txtMontoIngresado_GotFocus" FontSize="18" KeyUp="txtMontoIngresado_KeyUp" TextChanged="txtMontoIngresado_TextChanged" MaxLength="9" />
+        <Label x:Name="lblTotalPagar" Content="$0" HorizontalAlignment="Left" Margin="136,56,0,0" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="22"/>
+        <Button x:Name="button" Content="Confirmar compra" Margin="146,298,0,22" Height="Auto" HorizontalAlignment="Left" Width="221" Background="#FFD12E69" BorderBrush="#FFD12E69" Click="button_Click"/>
+        <Label x:Name="lblTotalPagar_Copy" Content="Total a pagar" Margin="84,17,82,291" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
+        <Label x:Name="lblVuelto" Content="Vuelto" Margin="84,192,82,114" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
+        <TextBox x:Name="txtVuelto" IsReadOnly="True" HorizontalAlignment="Left" Height="36" Margin="161,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Text="$0" Foreground="White" IsReadOnlyCaretVisible="True" FontSize="16"/>
+        <Label x:Name="lblTotalPagar_Copy1" Content="Ingrese monto con el que paga" Margin="84,95,82,232" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
+    </Grid>
+</Window>

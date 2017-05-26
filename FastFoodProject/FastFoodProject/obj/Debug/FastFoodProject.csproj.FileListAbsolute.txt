@@ -122,3 +122,5 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.dll
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.pdb
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.xml
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\ConfirmarCompra.g.cs
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\ConfirmarCompra.baml

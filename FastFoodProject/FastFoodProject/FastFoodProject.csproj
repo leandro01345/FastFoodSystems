@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ConfirmarCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GerentePaginas\MantenedorProductos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +104,9 @@
     </Compile>
     <Compile Include="CocineroView.xaml.cs">
       <DependentUpon>CocineroView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarCompra.xaml.cs">
+      <DependentUpon>ConfirmarCompra.xaml</DependentUpon>
     </Compile>
     <Compile Include="FastFoodDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

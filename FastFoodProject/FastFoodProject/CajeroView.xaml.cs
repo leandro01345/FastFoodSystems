@@ -24,6 +24,7 @@ namespace FastFoodProject
         {
             InitializeComponent();
             this.frame.Content = new Sistema_Productos();
+            this.txtUser.Text = "Bienvenido, "+ usuarioCajero.titular;
         }
         public MainWindow()
         {

@@ -97,7 +97,6 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.g.cs
-C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\App.g.cs
@@ -109,7 +108,6 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.baml
-C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\MainWindow.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.g.resources
@@ -124,3 +122,5 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\GongSolutions.Wpf.DragDrop.xml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\ConfirmarCompra.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\ConfirmarCompra.baml
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroView.g.cs
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroView.baml

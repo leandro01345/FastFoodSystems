@@ -32,18 +32,18 @@ namespace FastFoodProject
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            List<FastFood.DALC.Usuario> usuariosList = new List<FastFood.DALC.Usuario>();
+            UsuarioCollection listaUsuarios = new UsuarioCollection();
    
             try
             {
 
 
-                foreach (FastFood.DALC.Usuario usuario in usuariosList)
+                foreach (FastFood.DALC.Usuario usuario in listaUsuarios.GetUsuarios())
                 {
-                    if (usuario.usuario1 == txtUserName.Text && usuario.password == txtPwd.ToString())
+                    if (usuario.usuario1.Trim() == txtUserName.Text && usuario.password.Trim() == txtPwd.Password)
                     {
 
-                        this.Close();
+                        
                         if (usuario.tipoUsuario == 1)
                         {
 
@@ -53,31 +53,21 @@ namespace FastFoodProject
                         if (usuario.tipoUsuario == 2)
                         {
                             CocineroView cocinero = new CocineroView(usuario);
-                            cocinero.Show();
-
+                            cocinero.Show();    
                         }
                         if (usuario.tipoUsuario == 3)
                         {
 
                             GerenteView gerente = new GerenteView(usuario);
                             gerente.Show();
-
-
                         }
-
+                        this.Close();
                     }
                 }
-
-
-
-
-
-
+                this.lblMessage.Content = "Error - Usuario no encontrado.";
             }
             catch (Exception)
             {
-
-
             }
         }
     }

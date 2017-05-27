@@ -146,5 +146,16 @@ namespace FastFoodProject
             }
             productoDataGrid.Items.Refresh();
         }
+
+        private void textBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (this.textBox.Text == "Ingresa detalles adicionales aquí.") textBox.Text = "";
+
+        }
+
+        private void textBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (this.textBox.Text == "") textBox.Text = "Ingresa detalles adicionales aquí.";
+        }
     }
 }

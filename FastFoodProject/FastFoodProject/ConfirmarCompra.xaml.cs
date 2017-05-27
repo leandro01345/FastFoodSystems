@@ -27,19 +27,21 @@ namespace FastFoodProject
         PedidoCollection pedidos = new PedidoCollection();
         List<FastFood.DALC.Producto> carritoProductos;
         int totalPagar;
+        String descripcion;
 
         public ConfirmarCompra()
         {
             InitializeComponent();
             
         }
-        public ConfirmarCompra(int _totalPagar, List<FastFood.DALC.Producto> _carritoProductos, FastFood.DALC.Usuario _usuario)
+        public ConfirmarCompra(int _totalPagar, List<FastFood.DALC.Producto> _carritoProductos, FastFood.DALC.Usuario _usuario, String _descripcion)
         {
             InitializeComponent();
             totalPagar = _totalPagar;
             this.lblTotalPagar.Content = "$"+totalPagar.ToString();
             this.carritoProductos = _carritoProductos;
             this.usuario = _usuario;
+            this.descripcion = _descripcion;
         }
 
         private void txtMontoIngresado_GotFocus(object sender, RoutedEventArgs e)
@@ -75,7 +77,11 @@ namespace FastFoodProject
         private void button_Click(object sender, RoutedEventArgs e)
         {
             FastFood.Negocio.Pedido  p = new FastFood.Negocio.Pedido();
-            p.descripcion = "Orden normal";
+            if (descripcion== "Ingresa los detalles adicionales del cliente aquí.")
+            {
+                descripcion = "Sin descripción";
+            }
+            p.descripcion = descripcion;
             p.estado = "en cola";
             p.usuario_id_usuario = usuario.id_usuario;
             p.valor = totalPagar;

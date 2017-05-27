@@ -31,7 +31,7 @@ namespace FastFoodProject
         public MainWindow()
         {
             InitializeComponent();
-            this.frame.Content = new Sistema_Productos();
+            this.frame.Content = new Sistema_Productos(usuario);
         }
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
@@ -46,7 +46,7 @@ namespace FastFoodProject
 
         private void button_Copy1_Click(object sender, RoutedEventArgs e)
         {
-            this.frame.Content = new Sistema_Productos();
+            this.frame.Content = new Sistema_Productos(usuario);
         }
 
     }

@@ -16,9 +16,9 @@
         <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,57,19,24" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn" Binding="{Binding id_pedido}" Header="id pedido" IsReadOnly="True" Width="SizeToHeader"/>
-                <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="SizeToHeader"/>
-                <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="valor" Width="SizeToHeader"/>
-                <DataGridTemplateColumn x:Name="fechaColumn" Header="fecha" Width="150">
+                <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="300"/>
+                <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="valor" Width="100"/>
+                <DataGridTemplateColumn x:Name="fechaColumn" Header="fecha" Width="100">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <DatePicker SelectedDate="{Binding fecha, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>

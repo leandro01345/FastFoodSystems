@@ -173,3 +173,5 @@ C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\o
 C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
 C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.g.cs
 C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.baml
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.g.cs
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.baml

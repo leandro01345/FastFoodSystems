@@ -81,15 +81,24 @@ namespace FastFoodProject
             p.valor = totalPagar;
             p.fecha = DateTime.Today;
             p.Create();
+            List<FastFood.Negocio.Producto> listAux = new List<FastFood.Negocio.Producto>();
 
             foreach (FastFood.DALC.Producto productoItem in carritoProductos)
             {
                 FastFood.Negocio.Producto prod = new FastFood.Negocio.Producto();
+                prod.id_producto = 0;
                 prod.cantidad = productoItem.cantidad;
                 prod.nombre = productoItem.nombre;
                 prod.valor = productoItem.valor;
                 prod.pedido_id_pedido = pedidos.GetPedidos().Last().id_pedido;
-                prod.Create();
+                listAux.Add(prod);
+                productoItem.cantidad = 1;
+            }
+
+
+            foreach (FastFood.Negocio.Producto productoItem in listAux)
+            {
+                productoItem.Create();
             }
                 this.Close();
             

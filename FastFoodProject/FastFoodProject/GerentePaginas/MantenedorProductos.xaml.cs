@@ -21,9 +21,14 @@ namespace FastFoodProject.GerentePaginas
     /// </summary>
     public partial class MantenedorProductos : Page
     {
+        ProductoCollection productos = new ProductoCollection();
         public MantenedorProductos()
         {
             InitializeComponent();
+            List<FastFood.DALC.Producto> productosGerente = productos.GetProductos();
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("productoViewSource"));
+            itemCollectionViewSource.Source = productosGerente;
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)

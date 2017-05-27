@@ -38,6 +38,7 @@ namespace FastFoodProject
                 }
             }
 
+            pedidosUsuario.Reverse();
 
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));

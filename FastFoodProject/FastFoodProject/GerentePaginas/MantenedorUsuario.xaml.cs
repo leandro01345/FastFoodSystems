@@ -20,9 +20,13 @@ namespace FastFoodProject.GerentePaginas
     /// </summary>
     public partial class MantenedorUsuario : Page
     {
+        UsuarioCollection usuarios = new UsuarioCollection();
         public MantenedorUsuario()
         {
             InitializeComponent();
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("usuarioViewSource"));
+            itemCollectionViewSource.Source = usuarios.GetUsuarios();
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)

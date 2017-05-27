@@ -109,7 +109,7 @@ namespace FastFoodProject
             totalPagar = 0;
             foreach (var item in carritoProductos)
             {
-                totalPagar += item.valor;
+                totalPagar += item.valor * item.cantidad;
             }
             this.lblPrecioTotal.Content = "$" + totalPagar.ToString();
 

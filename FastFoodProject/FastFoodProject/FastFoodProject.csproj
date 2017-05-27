@@ -117,6 +117,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FastFoodDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FastFoodDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FastFoodDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FastFoodPedidosSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -178,6 +183,17 @@
     </None>
     <None Include="FastFoodDataSet.xss">
       <DependentUpon>FastFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FastFoodDataSet1.xsc">
+      <DependentUpon>FastFoodDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FastFoodDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FastFoodDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FastFoodDataSet1.xss">
+      <DependentUpon>FastFoodDataSet1.xsd</DependentUpon>
     </None>
     <None Include="FastFoodPedidosSet.xsc">
       <DependentUpon>FastFoodPedidosSet.xsd</DependentUpon>

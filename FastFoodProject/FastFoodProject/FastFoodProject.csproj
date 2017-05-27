@@ -86,6 +86,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GerentePaginas\MantenedorUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GerenteView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,6 +127,9 @@
     </Compile>
     <Compile Include="GerentePaginas\MantenedorPublicidad.xaml.cs">
       <DependentUpon>MantenedorPublicidad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GerentePaginas\MantenedorUsuario.xaml.cs">
+      <DependentUpon>MantenedorUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="GerenteView.xaml.cs">
       <DependentUpon>GerenteView.xaml</DependentUpon>
@@ -197,7 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FastFood.DALC\FastFood.DALC.csproj">
-      <Project>{0505A305-A929-450E-BB3A-7A4CC7FB0419}</Project>
+      <Project>{0505a305-a929-450e-bb3a-7a4cc7fb0419}</Project>
       <Name>FastFood.DALC</Name>
     </ProjectReference>
     <ProjectReference Include="..\FastFood.Negocio\FastFood.Negocio.csproj">

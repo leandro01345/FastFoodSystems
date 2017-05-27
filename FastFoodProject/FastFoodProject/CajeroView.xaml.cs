@@ -20,11 +20,13 @@ namespace FastFoodProject
     /// </summary>
     public partial class MainWindow : Window
     {
+        FastFood.DALC.Usuario usuario;
         public MainWindow(FastFood.DALC.Usuario usuarioCajero)
         {
             InitializeComponent();
-            this.frame.Content = new Sistema_Productos();
-            this.txtUser.Text = "Bienvenido, "+ usuarioCajero.titular;
+            this.frame.Content = new Sistema_Productos(usuarioCajero);
+            this.usuario = usuarioCajero;
+            this.txtUser.Text = "Bienvenido, "+ usuario.titular;
         }
         public MainWindow()
         {
@@ -34,7 +36,7 @@ namespace FastFoodProject
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            this.frame.Content = new Sistema_Ordenes();
+            this.frame.Content = new Sistema_Ordenes(this.usuario);
         }
 
         private void frame_Navigated(object sender, NavigationEventArgs e)

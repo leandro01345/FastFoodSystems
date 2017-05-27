@@ -24,7 +24,7 @@ namespace FastFood.Negocio
 
             id_pedido = 0;
             descripcion = string.Empty;
-            fecha = DateTime.Now;
+            fecha = DateTime.Today;
             valor = 0;
             estado = string.Empty;
             usuario_id_usuario = 0;
@@ -60,7 +60,7 @@ namespace FastFood.Negocio
                 p.fecha = fecha;
                 p.valor = valor;
                 p.estado = estado;
-                p.usuario_id_usuario = p.usuario_id_usuario;
+                p.usuario_id_usuario = usuario_id_usuario;
 
                 CommonBC.ModeloFastFood.Pedido.Add(p);
                 CommonBC.ModeloFastFood.SaveChanges();

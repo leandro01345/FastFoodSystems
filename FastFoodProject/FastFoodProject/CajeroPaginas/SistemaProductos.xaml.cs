@@ -24,40 +24,103 @@ namespace FastFoodProject
         //Variables para gestionar la aplicacion de los productos
         ProductoCollection productos = new ProductoCollection();
         List<FastFood.DALC.Producto> carritoProductos;
+        List<FastFood.DALC.Producto> productosBD;
         int totalPagar;
-        
+        FastFood.DALC.Usuario usuario;
+
+        //Constructores
+        public Sistema_Productos(FastFood.DALC.Usuario _usuario)
+        {
+            InitializeComponent();
+            
+            totalPagar = 0;
+            carritoProductos = productos.GetProductos();
+            usuario = _usuario;
+            productosBD = productos.GetProductos();
+            ActualizarProductos();
+        }
+
         //Constructores
         public Sistema_Productos()
         {
             InitializeComponent();
-            ActualizarProductos();
+            
             totalPagar = 0;
             carritoProductos = productos.GetProductos();
+            productosBD = productos.GetProductos();
+            ActualizarProductos();
         }
+
         private void ActualizarProductos()
         {
+            productosBD = productos.GetProductos();
+            List<FastFood.DALC.Producto> productosAux = new List<FastFood.DALC.Producto>();
+            foreach (var p in productosBD)
+            {
+                if (p.pedido_id_pedido==null)
+                {
+                    productosAux.Add(p);
+                }
+            }
+            productosBD = productosAux;
+
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("productoViewSource"));
-            itemCollectionViewSource.Source = productos.GetProductos();
+            itemCollectionViewSource.Source = productosBD;
+            this.productoDataGrid.Items.Refresh();
+
         }
 
         private void dg_carrito_LoadingRow(object sender, DataGridRowEventArgs e)
         {
+            
             carritoProductos = this.dg_carrito.Items.OfType<FastFood.DALC.Producto>().ToList();
+            DataGridRow row1 = e.Row;
+            int row_index = ((DataGrid)sender).ItemContainerGenerator.IndexFromContainer(row1);
+
+            dg_carrito.Items.MoveCurrentToPrevious();
+
+            int i = 0;
+            int objetoIndex = 0;
+            int indexCont = 0;
+            foreach (FastFood.DALC.Producto p in carritoProductos)
+            {
+                if (p.Equals(carritoProductos.ElementAt(row_index)))
+                {
+                    i++;
+                    if (i == 1)
+                    {
+                      objetoIndex = indexCont;
+                    }
+                    
+                }
+                indexCont++;
+            } 
+
+            if (i > 1)
+            {
+                carritoProductos.ElementAt(objetoIndex).cantidad++;
+                //carritoProductos.Remove(carritoProductos.ElementAt(row_index));
+                this.dg_carrito.Items.RemoveAt(row_index);
+                this.dg_carrito.Items.Refresh();
+                
+            }
+
             totalPagar = 0;
             foreach (var item in carritoProductos)
             {
                 totalPagar += item.valor;
             }
-            this.lblPrecioTotal.Content = "$"+ totalPagar.ToString();
+            this.lblPrecioTotal.Content = "$" + totalPagar.ToString();
+
             ActualizarProductos();
-            
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
-            ConfirmarCompra cf = new ConfirmarCompra(totalPagar);
+            ConfirmarCompra cf = new ConfirmarCompra(totalPagar, this.carritoProductos, this.usuario);
             cf.Show();
             //una ventana abierta cuando cierro otra, por lo que no puede ser a través del
             //constructor.
@@ -69,8 +132,20 @@ namespace FastFoodProject
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
+
+            ActualizarProductos();
             this.dg_carrito.Items.Clear();
             this.lblPrecioTotal.Content = "$0";
+            int i = 0;
+            this.carritoProductos = productos.GetProductos();
+            List<FastFood.DALC.Producto> odioMivida = productos.GetProductos();
+            foreach (FastFood.DALC.Producto p in odioMivida)
+            {
+
+                carritoProductos.ElementAt(i).cantidad = 1;
+                i++;
+            }
+            productoDataGrid.Items.Refresh();
         }
     }
 }

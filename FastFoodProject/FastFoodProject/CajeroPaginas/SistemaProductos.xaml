@@ -12,6 +12,7 @@
         <CollectionViewSource x:Key="ItemCollectionViewSource" CollectionViewType="ListCollectionView"/>
         <local:FastFoodDataSet x:Key="fastFoodDataSet"/>
         <CollectionViewSource x:Key="productoViewSource" Source="{Binding Producto, Source={StaticResource fastFoodDataSet}}"/>
+    
     </Page.Resources>
 
     <Grid>
@@ -30,7 +31,7 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <DataGrid x:Name="dg_carrito" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" 
+        <DataGrid x:Name="dg_carrito" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Producto}" 
             Margin="0,60,0,74" RowDetailsVisibilityMode="VisibleWhenSelected" IsReadOnly="True"
             dd:DragDrop.IsDragSource="False" dd:DragDrop.IsDropTarget="True" HorizontalAlignment="Left" Width="275" LoadingRow="dg_carrito_LoadingRow">
             <DataGrid.Columns>

@@ -21,9 +21,11 @@ namespace FastFoodProject
     /// </summary>
     public partial class ConfirmarCompra : Window
     {
+        FastFood.DALC.Usuario usuario;
         //variables a utilizar para la generacion de las cosas.
         ProductoCollection productos = new ProductoCollection();
-        List<FastFood.DALC.Producto> carritoProductos = new List<FastFood.DALC.Producto>();
+        PedidoCollection pedidos = new PedidoCollection();
+        List<FastFood.DALC.Producto> carritoProductos;
         int totalPagar;
 
         public ConfirmarCompra()
@@ -31,11 +33,13 @@ namespace FastFoodProject
             InitializeComponent();
             
         }
-        public ConfirmarCompra(int _totalPagar)
+        public ConfirmarCompra(int _totalPagar, List<FastFood.DALC.Producto> _carritoProductos, FastFood.DALC.Usuario _usuario)
         {
             InitializeComponent();
             totalPagar = _totalPagar;
             this.lblTotalPagar.Content = "$"+totalPagar.ToString();
+            this.carritoProductos = _carritoProductos;
+            this.usuario = _usuario;
         }
 
         private void txtMontoIngresado_GotFocus(object sender, RoutedEventArgs e)
@@ -70,7 +74,24 @@ namespace FastFoodProject
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            FastFood.Negocio.Pedido  p = new FastFood.Negocio.Pedido();
+            p.descripcion = "Orden normal";
+            p.estado = "en cola";
+            p.usuario_id_usuario = usuario.id_usuario;
+            p.valor = totalPagar;
+            p.fecha = DateTime.Today;
+            p.Create();
+
+            foreach (FastFood.DALC.Producto productoItem in carritoProductos)
+            {
+                FastFood.Negocio.Producto prod = new FastFood.Negocio.Producto();
+                prod.cantidad = productoItem.cantidad;
+                prod.nombre = productoItem.nombre;
+                prod.valor = productoItem.valor;
+                prod.pedido_id_pedido = pedidos.GetPedidos().Last().id_pedido;
+                prod.Create();
+            }
+                this.Close();
             
         }
     }

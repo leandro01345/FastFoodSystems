@@ -21,14 +21,28 @@ namespace FastFoodProject
     public partial class Sistema_Ordenes : Page
     {
         FastFood.Negocio.PedidoCollection pedidos = new FastFood.Negocio.PedidoCollection();
-
-        public Sistema_Ordenes()
+        FastFood.DALC.Usuario usuario = new FastFood.DALC.Usuario(); 
+        public Sistema_Ordenes( FastFood.DALC.Usuario _usuario)
         {
             InitializeComponent();
-            InitializeComponent();
+
+            usuario = _usuario;
+
+            List <FastFood.DALC.Pedido> pedidosUsuario = pedidos.GetPedidos();
+
+            foreach (FastFood.DALC.Pedido pedido in pedidosUsuario)
+            {
+                if (usuario.id_usuario != pedido.usuario_id_usuario)
+                {
+                    pedidosUsuario.Remove(pedido);
+                }
+            }
+
+
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));
-            itemCollectionViewSource.Source = pedidos.GetPedidos();
+            itemCollectionViewSource.Source = pedidosUsuario;
+
         }
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

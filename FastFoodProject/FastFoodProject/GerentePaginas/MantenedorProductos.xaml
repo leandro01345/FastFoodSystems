@@ -10,15 +10,46 @@
 
     <Grid>
         <GroupBox x:Name="groupBox" Header="Mantenedor de productos: Edita y modifica la linformacion de tus productos aquí.">
-            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="239" Margin="0,10,0,-1" VerticalAlignment="Top" Width="600">
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="258" Margin="0,-9,0,-1" VerticalAlignment="Top" Width="600">
                 <TabItem Header="Agregar nuevo producto" Background="White" BorderBrush="White">
-                    <Grid Background="#E5190E18"/>
+                    <Grid Background="#E5190E18" Margin="0,-1,7,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="193*"/>
+                            <ColumnDefinition Width="383*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblProducto" Content="Agregar Producto" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Width="184" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20" Grid.ColumnSpan="2"/>
+                        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14"/>
+                        <Label x:Name="lblCantidad" Content="Cantidad:" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14"/>
+                        <Label x:Name="lblValor" Content="Valor:" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14"/>
+                        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="28" Margin="85,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="28" Margin="85,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="28" Margin="85,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Text="0" Grid.ColumnSpan="2"/>
+                        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="213,141,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.275,-0.545" FontFamily="Rockwell" FontSize="16" Click="btnAgregar_Click" Grid.Column="1"/>
+                    </Grid>
                 </TabItem>
                 <TabItem Header="Editar producto">
-                    <Grid Background="#E5190E18"/>
+                    <Grid Background="#E5190E18">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="9*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblActualizar" Content="Actualizar Producto" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Width="202" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20" Grid.ColumnSpan="2"/>
+                        <Label x:Name="lblNombreUpdate" Content="Nombre:" HorizontalAlignment="Left" Margin="41,93,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14" Grid.ColumnSpan="2"/>
+                        <Label x:Name="lblCantidadUpdate" Content="Cantidad:" HorizontalAlignment="Left" Margin="41,127,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14" Grid.ColumnSpan="2"/>
+                        <Label x:Name="lblValorUpdate" Content="Valor:" HorizontalAlignment="Left" Margin="41,161,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="txtNombreUpdate" HorizontalAlignment="Left" Height="26" Margin="87,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6" Grid.Column="1"/>
+                        <TextBox x:Name="txtCantidadUpdate" HorizontalAlignment="Left" Height="26" Margin="87,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6" Grid.Column="1" Text="0"/>
+                        <TextBox x:Name="txtValorUpdate" HorizontalAlignment="Left" Height="26" Margin="87,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Text="0" Grid.Column="1"/>
+                        <Button x:Name="btnBuscar" Content="Buscar" Grid.Column="1" HorizontalAlignment="Left" Margin="327,45,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click"/>
+                        <Button x:Name="btnUpdate" Content="Actualizar" Grid.Column="1" HorizontalAlignment="Left" Margin="327,141,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click"/>
+                        <Label x:Name="lblId" Content="Id Producto:" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="87" FontFamily="Rockwell" FontSize="14" Foreground="#DDFBEEEE"/>
+                        <TextBox x:Name="txtId" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="87,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1"/>
+                    </Grid>
                 </TabItem>
                 <TabItem Header="Lista de productos" Margin="-2,-2,-2,0">
-                    <Grid Background="#E5190E18"/>
+                    <Grid Background="#E5190E18">
+                        <DataGrid HorizontalAlignment="Left" Height="155" Margin="10,24,0,0" VerticalAlignment="Top" Width="558"/>
+                    </Grid>
                 </TabItem>
             </TabControl>
         </GroupBox>

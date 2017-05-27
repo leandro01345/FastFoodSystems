@@ -44,5 +44,10 @@ namespace FastFoodProject
         {
 
         }
+
+        private void btnGestionUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            this.GerenteFrame.Content = new GerentePaginas.MantenedorUsuario();
+        }
     }
 }

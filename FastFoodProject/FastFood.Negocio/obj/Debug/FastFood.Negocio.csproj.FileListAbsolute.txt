@@ -20,3 +20,14 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.csprojResolveAssemblyReference.cache
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.dll
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.pdb
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.dll.config
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.dll
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.Negocio.pdb
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.dll
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.pdb
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\FastFood.DALC.dll.config
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.dll
+C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFood.Negocio\obj\Debug\FastFood.Negocio.pdb

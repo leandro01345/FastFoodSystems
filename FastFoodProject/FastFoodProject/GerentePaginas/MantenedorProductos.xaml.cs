@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FastFood.Negocio;
 
 namespace FastFoodProject.GerentePaginas
 {
@@ -23,6 +24,74 @@ namespace FastFoodProject.GerentePaginas
         public MantenedorProductos()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            Producto prod = new Producto();
+
+            try
+            {
+               
+                if (!prod.Read())
+                {
+                   
+                    prod.nombre = txtNombre.Text;
+                    prod.valor = int.Parse(txtValor.Text);
+                    prod.cantidad = int.Parse(txtCantidad.Text);
+                   
+                    prod.Create();
+
+                }
+                    
+                 
+            }
+            catch (Exception )
+            {
+
+                throw;
+            }
+        }
+
+        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Producto prod = new Producto();
+                prod.id_producto = int.Parse(txtId.Text);
+                    if (prod.Read())
+                    {
+                    txtNombreUpdate.Text = prod.nombre;
+                    txtValorUpdate.Text = prod.valor.ToString();
+                    txtCantidadUpdate.Text = prod.cantidad.ToString();
+                    }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Producto prod = new Producto();
+                prod.id_producto = int.Parse(txtId.Text);
+                if (prod.Read())
+                {
+                    prod.nombre = txtNombreUpdate.Text;
+                    prod.valor = int.Parse(txtValorUpdate.Text);
+                    prod.cantidad = int.Parse(txtCantidadUpdate.Text);
+                    prod.Update();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

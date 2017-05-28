@@ -49,5 +49,11 @@ namespace FastFoodProject
             this.frame.Content = new Sistema_Productos(usuario);
         }
 
+        private void button_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }

@@ -15,21 +15,13 @@
 
     </Page.Resources>
 
-    <Grid>
+    <Grid DataContext="{StaticResource productoViewSource}">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="275"/>
+        <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="275" />
         <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="315,26,42,74" Background="{x:Null}"/>
         <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="275" Height="69" VerticalAlignment="Bottom" Background="#FF55459B"/>
-        <DataGrid DataContext="{StaticResource productoViewSource}" x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" 
-                  Margin="315,60,42,74" RowDetailsVisibilityMode="VisibleWhenSelected" AllowDrop="True" IsReadOnly="True"
-                  dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding nombre}" Header="Nombre" Width="150"/>
-                <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="Precio" Width="SizeToHeader"/>
-            </DataGrid.Columns>
-        </DataGrid>
 
         <DataGrid x:Name="dg_carrito" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Producto}" 
             Margin="0,60,0,74" RowDetailsVisibilityMode="VisibleWhenSelected" IsReadOnly="True"
@@ -44,6 +36,42 @@
         <Button x:Name="btnConfirmarCompra" Content="Generar Orden" HorizontalAlignment="Left" Margin="128,0,0,10" VerticalAlignment="Bottom" Width="135" Background="#FF0D8EAA" Foreground="#FDFFFFFF" Height="34" BorderBrush="#FF0D8EAA" Click="button_Click" RenderTransformOrigin="0.267,0.426"/>
         <Button x:Name="btnLimpiar" Content="Limpiar Orden" Margin="134,5,0,0" VerticalAlignment="Top" Background="#FF992020" Foreground="#FDFFFFFF" Height="31" BorderBrush="#FF992020" RenderTransformOrigin="0.267,0.426" HorizontalAlignment="Left" Width="141" Click="btnLimpiar_Click"/>
         <TextBox x:Name="textBox" Margin="315,240,42,10" TextWrapping="Wrap" AcceptsReturn="True" Foreground="White" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Text="Ingresa los detalles adicionales del cliente aquí." FontSize="18"/>
+        <ListBox DataContext="{StaticResource productoViewSource}" x:Name="productoListBox"  ItemsSource="{Binding}" Margin="315,60,42,74"
+                dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="False"  Foreground="WhiteSmoke" Background="#FF131313" BorderBrush="#FFFF9595" HorizontalContentAlignment="Stretch" ClipToBounds="True" FontSize="14">
+            <ListBox.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E00FF" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.OpacityMask>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" SharedSizeGroup="Column1"/>
+                            <ColumnDefinition Width="8" SharedSizeGroup="Column4"/>
+                            <ColumnDefinition Width="210" SharedSizeGroup="Column2"/>
 
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" SharedSizeGroup="Row1"/>
+                            <RowDefinition Height="80" SharedSizeGroup="Row2"/>
+                        </Grid.RowDefinitions>
+                        <!-- Assumes MVVM and you wish to bind to properties and commands -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" Text=""/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text="{Binding nombre}"/>
+                        <TextBlock Grid.Column="2" Grid.Row="1" Text="{Binding valor}"/>
+                        <TextBlock Grid.Column="1" Grid.Row="1" Text="$"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Page>

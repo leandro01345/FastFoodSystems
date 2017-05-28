@@ -30,20 +30,21 @@ namespace FastFoodProject
             usuario = _usuario;
 
             List <FastFood.DALC.Pedido> pedidosUsuario = pedidos.GetPedidos();
-
+            List<FastFood.DALC.Pedido> pedidosUsuarioAux = new List<FastFood.DALC.Pedido>();
+            //puedo mejorar esto con pedidos por usuario en LINQ en  pedidosCollection.
             foreach (FastFood.DALC.Pedido pedido in pedidosUsuario)
             {
-                if (usuario.id_usuario != pedido.usuario_id_usuario)
+                if (usuario.id_usuario == pedido.usuario_id_usuario)
                 {
-                    pedidosUsuario.Remove(pedido);
+                    pedidosUsuarioAux.Add(pedido);
                 }
             }
 
-            pedidosUsuario.Reverse();
+            pedidosUsuarioAux.Reverse();
 
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));
-            itemCollectionViewSource.Source = pedidosUsuario;
+            itemCollectionViewSource.Source = pedidosUsuarioAux;
 
         }
 

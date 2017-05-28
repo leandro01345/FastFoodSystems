@@ -33,7 +33,6 @@ namespace FastFoodProject.GerentePaginas
 
         public void limpiarAgregar() {
             txtNombre.Text = string.Empty;
-            txtCantidad.Text = string.Empty;
             txtValor.Text = string.Empty;
         }
         public void limpiarUpdate() {
@@ -56,8 +55,7 @@ namespace FastFoodProject.GerentePaginas
                    
                     prod.nombre = txtNombre.Text;
                     prod.valor = int.Parse(txtValor.Text);
-                    prod.cantidad = int.Parse(txtCantidad.Text);
-                   
+                    prod.pedido_id_pedido = null;
                     prod.Create();
                     this.limpiarAgregar();
 

@@ -26,18 +26,13 @@ namespace FastFoodProject
         public GerenteView(FastFood.DALC.Usuario usuarioGerente)
         {
             InitializeComponent();
-           
-            
+            this.GerenteFrame.Content = new GerentePaginas.MantenedorProductos();
+
         }
 
         private void btnMantenedorProductos_Click(object sender, RoutedEventArgs e)
         {
             this.GerenteFrame.Content = new GerentePaginas.MantenedorProductos();
-        }
-
-        private void btnMantenedorPublicidad_Click(object sender, RoutedEventArgs e)
-        {
-            GerenteFrame.Content = new GerentePaginas.MantenedorPublicidad();
         }
 
         private void GerenteFrame_Navigated(object sender, NavigationEventArgs e)
@@ -48,6 +43,13 @@ namespace FastFoodProject
         private void btnGestionUsuario_Click(object sender, RoutedEventArgs e)
         {
             this.GerenteFrame.Content = new GerentePaginas.MantenedorUsuario();
+        }
+
+        private void button_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

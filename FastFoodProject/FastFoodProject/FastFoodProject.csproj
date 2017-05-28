@@ -58,6 +58,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Controls.v6.2, Version=6.2.17123.15050, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.Controls.6.2.17123.15050\lib\net40\Xceed.Wpf.Controls.v6.2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -79,10 +82,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GerentePaginas\MantenedorProductos.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="GerentePaginas\MantenedorPublicidad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,9 +128,6 @@
     </Compile>
     <Compile Include="GerentePaginas\MantenedorProductos.xaml.cs">
       <DependentUpon>MantenedorProductos.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GerentePaginas\MantenedorPublicidad.xaml.cs">
-      <DependentUpon>MantenedorPublicidad.xaml</DependentUpon>
     </Compile>
     <Compile Include="GerentePaginas\MantenedorUsuario.xaml.cs">
       <DependentUpon>MantenedorUsuario.xaml</DependentUpon>

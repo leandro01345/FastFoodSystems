@@ -95,7 +95,6 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csprojResolveAssemblyReference.cache
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.g.cs
-C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.g.cs
@@ -106,7 +105,6 @@ C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\App.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CocineroView.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorProductos.baml
-C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorPublicidad.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerenteView.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\MantenedorOrdenes.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\CajeroPaginas\SistemaProductos.baml
@@ -175,3 +173,5 @@ C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\o
 C:\Users\Jose\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.baml
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.g.cs
 C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\obj\Debug\GerentePaginas\MantenedorUsuario.baml
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\Xceed.Wpf.Controls.v6.2.dll
+C:\Users\Yisus\Documents\GitHub\FastFoodSystems\FastFoodProject\FastFoodProject\bin\Debug\Xceed.Wpf.Controls.v6.2.xml

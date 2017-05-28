@@ -67,7 +67,7 @@ namespace FastFoodProject
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("productoViewSource"));
             itemCollectionViewSource.Source = productosBD;
-            this.productoDataGrid.Items.Refresh();
+            this.productoListBox.Items.Refresh();
 
         }
 
@@ -149,7 +149,7 @@ namespace FastFoodProject
                 carritoProductos.ElementAt(i).cantidad = 1;
                 i++;
             }
-            productoDataGrid.Items.Refresh();
+            productoListBox.Items.Refresh();
             this.textBox.Text = "Ingresa los detalles adicionales del cliente aquí.";
         }
 

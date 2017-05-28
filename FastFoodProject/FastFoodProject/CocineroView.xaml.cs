@@ -20,9 +20,20 @@ namespace FastFoodProject
     /// </summary>
     public partial class CocineroView : Window
     {
+        PedidoCollection pedidos = new PedidoCollection(); 
         public CocineroView(FastFood.DALC.Usuario usuarioCocinero)
         {
             InitializeComponent();
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));
+            itemCollectionViewSource.Source = pedidos.GetPedidos();
+        }
+
+        private void button_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

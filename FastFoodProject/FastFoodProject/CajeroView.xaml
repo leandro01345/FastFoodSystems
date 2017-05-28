@@ -18,15 +18,27 @@
             <RowDefinition Height="17*"/>
             <RowDefinition Height="95*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="button_Copy" Content="Ordenes" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,160,0" BorderBrush="#FF610C2D" Click="button_Copy_Click"/>
-        <Button x:Name="button_Copy1" Content="Productos" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" BorderBrush="#FF610C2D" Click="button_Copy1_Click" Margin="0,11,20,0"/>
+        <Button x:Name="button_Copy" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,172,0" BorderBrush="#FF610C2D" Click="button_Copy_Click">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Food" Height="22" Width="26" HorizontalAlignment="Right" />
+                <TextBlock Height="15" Width="86" Text="Ordenes"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="button_Copy1" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" BorderBrush="#FF610C2D" Click="button_Copy1_Click" Margin="0,11,312,0">
+            <StackPanel Orientation="Horizontal" Width="118">
+                <materialDesign:PackIcon Kind="Basket" Height="22" Width="27" HorizontalAlignment="Right" />
+                <TextBlock Height="14" Width="84" Text="Caja Virtual"/>
+            </StackPanel>
+        </Button>
         <Frame x:Name="frame" Content="" Margin="25,21.5,24,28" Navigated="frame_Navigated" NavigationUIVisibility="Hidden" Grid.Row="1"/>
         <TextBlock x:Name="txtUser" Margin="25,15,484,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4" Text="Bienvenido, usuario"/>
         <TextBlock x:Name="textBlock_Copy" Margin="499,0,10,-2" TextWrapping="Wrap" FontFamily="Roboto" FontSize="16" FontStyle="Italic" Foreground="#DDB4B4B4" Text="v0.2.0" TextAlignment="Right" Height="28" VerticalAlignment="Bottom" Grid.Row="1"/>
-        <Button x:Name="button_Copy2" Content="Mi perfil" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,300,0" BorderBrush="#FF610C2D" Click="button_Copy_Click" ></Button>
-        <materialDesign:PackIcon Kind="Account" Height="22" Width="40" Margin="0,15,396,0" HorizontalAlignment="Right" />
-        <materialDesign:PackIcon Kind="Food" Height="22" Width="40" Margin="0,15,260,0" HorizontalAlignment="Right" />
-        <materialDesign:PackIcon Kind="Basket" Height="22" Width="40" Margin="0,15,120,0" HorizontalAlignment="Right" />
+        <Button x:Name="button_Copy2" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="140" Margin="0,11,32,0" BorderBrush="#FF610C2D" Click="button_Copy2_Click" >
+            <StackPanel Orientation="Horizontal" Width="124">
+                <materialDesign:PackIcon Kind="Account" Height="22" Width="21" HorizontalAlignment="Right" IsEnabled="False" />
+                <TextBlock Height="14" Width="100" Text="Desconectar"/>
+            </StackPanel>
+        </Button>
         <Rectangle Fill="#FF5D5D5D" Height="1" Margin="0,52,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top"/>
     </Grid>
 </Window>

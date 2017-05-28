@@ -14,13 +14,13 @@
     </Page.Resources>
 
     <Grid DataContext="{StaticResource pedidoViewSource}">
-        <GroupBox x:Name="groupBox_Copy" Header="Ordenes" Margin="290,26,10,11" Background="{x:Null}"/>
-        <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="290,59,10,11" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" SelectionChanged="pedidoDataGrid_SelectionChanged">
+        <GroupBox x:Name="groupBox_Copy" Header="Ordenes" Margin="320,26,10,11" Background="{x:Null}"/>
+        <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="320,59,10,11" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" SelectionChanged="pedidoDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn" Binding="{Binding id_pedido}" Header="id pedido" IsReadOnly="True" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="300"/>
                 <DataGridTextColumn x:Name="valorColumn" Binding="{Binding valor}" Header="valor" Width="100"/>
-                <DataGridTemplateColumn x:Name="fechaColumn" Header="fecha" Width="100">
+                <DataGridTemplateColumn x:Name="fechaColumn" Header="fecha" Width="110">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <DatePicker SelectedDate="{Binding fecha, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
@@ -30,11 +30,14 @@
                 <DataGridTextColumn x:Name="estadoColumn" Binding="{Binding estado}" Header="estado" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
-        <GroupBox x:Name="groupBox_Copy1" Header="Productos del pedido" Margin="10,26,0,10" Background="{x:Null}" HorizontalAlignment="Left" Width="240"/>
-        <DataGrid x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource productoViewSource}}" Margin="10,59,0,10" RowDetailsVisibilityMode="VisibleWhenSelected" HorizontalAlignment="Left" Width="240" IsReadOnly="True" CanUserAddRows="False" CanUserReorderColumns="False" CanUserSortColumns="False">
+        <GroupBox x:Name="groupBox_Copy1" Header="Productos del pedido" Margin="10,26,0,10" Background="{x:Null}" HorizontalAlignment="Left" Width="285"/>
+        <DataGrid x:Name="productoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource productoViewSource}}" Margin="10,59,0,10" RowDetailsVisibilityMode="VisibleWhenSelected" HorizontalAlignment="Left" Width="285" IsReadOnly="True" CanUserAddRows="False" CanUserReorderColumns="False" CanUserSortColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding nombre}" Header="nombre" Width="150"/>
+                <DataGridTextColumn x:Name="cantidadColumn1" Binding="{Binding cantidad}" Header="cantidad" Width="80"/>
                 <DataGridTextColumn x:Name="valorColumn1" Binding="{Binding valor}" Header="valor" Width="100"/>
+                
+
             </DataGrid.Columns>
         </DataGrid>
 

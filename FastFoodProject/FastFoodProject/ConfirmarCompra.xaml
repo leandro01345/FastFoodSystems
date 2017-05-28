@@ -14,5 +14,6 @@
         <Label x:Name="lblVuelto" Content="Vuelto" Margin="84,192,82,114" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
         <TextBox x:Name="txtVuelto" IsReadOnly="True" HorizontalAlignment="Left" Height="36" Margin="161,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Text="$0" Foreground="White" IsReadOnlyCaretVisible="True" FontSize="16"/>
         <Label x:Name="lblTotalPagar_Copy1" Content="Ingrese monto con el que paga" Margin="84,95,82,232" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
+        <Label x:Name="lblTotalPagar_Copy2" Content="$" Margin="118,151,328,165" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
     </Grid>
 </Window>

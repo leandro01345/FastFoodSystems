@@ -119,14 +119,18 @@ namespace FastFoodProject
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.carritoProductos = this.dg_carrito.Items.OfType<FastFood.DALC.Producto>().ToList();
-            ConfirmarCompra cf = new ConfirmarCompra(totalPagar, this.carritoProductos, this.usuario,this.textBox.Text);
-            cf.Show();
-            //una ventana abierta cuando cierro otra, por lo que no puede ser a través del
-            //constructor.
+            if (totalPagar > 0)
+            {
+                this.carritoProductos = this.dg_carrito.Items.OfType<FastFood.DALC.Producto>().ToList();
+                ConfirmarCompra cf = new ConfirmarCompra(totalPagar, this.carritoProductos, this.usuario, this.textBox.Text);
+                cf.Show();
+                //una ventana abierta cuando cierro otra, por lo que no puede ser a través del
+                //constructor.
 
-            //this.dg_carrito.Items.Clear();
-            //this.lblPrecioTotal.Content = "$0"; tengo que averiguar una forma de modificar 
+                //this.dg_carrito.Items.Clear();
+                //this.lblPrecioTotal.Content = "$0"; tengo que averiguar una forma de modificar 
+            }
+
 
         }
 
@@ -137,6 +141,7 @@ namespace FastFoodProject
             this.dg_carrito.Items.Clear();
             this.lblPrecioTotal.Content = "$0";
             int i = 0;
+            this.totalPagar = 0;
             this.carritoProductos = productosBD;
             foreach (FastFood.DALC.Producto p in carritoProductos)
             {

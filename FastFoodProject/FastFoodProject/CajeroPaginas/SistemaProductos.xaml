@@ -43,7 +43,7 @@
         <Label x:Name="lblPrecioTotal" Content="$0" Margin="38,0,372,37" Height="28" VerticalAlignment="Bottom" Foreground="#DDFFFFFF" FontSize="16"/>
         <Button x:Name="btnConfirmarCompra" Content="Generar Orden" HorizontalAlignment="Left" Margin="128,0,0,10" VerticalAlignment="Bottom" Width="135" Background="#FF0D8EAA" Foreground="#FDFFFFFF" Height="34" BorderBrush="#FF0D8EAA" Click="button_Click" RenderTransformOrigin="0.267,0.426"/>
         <Button x:Name="btnLimpiar" Content="Limpiar Orden" Margin="134,5,0,0" VerticalAlignment="Top" Background="#FF992020" Foreground="#FDFFFFFF" Height="31" BorderBrush="#FF992020" RenderTransformOrigin="0.267,0.426" HorizontalAlignment="Left" Width="141" Click="btnLimpiar_Click"/>
-        <TextBox x:Name="textBox" Margin="315,240,42,10" TextWrapping="Wrap" AcceptsReturn="True" Foreground="White" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Text="Ingresa los detalles adicionales del cliente aquí."/>
+        <TextBox x:Name="textBox" Margin="315,240,42,10" TextWrapping="Wrap" AcceptsReturn="True" Foreground="White" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Text="Ingresa los detalles adicionales del cliente aquí." FontSize="18"/>
 
     </Grid>
 </Page>

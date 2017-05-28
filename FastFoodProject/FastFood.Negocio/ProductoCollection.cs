@@ -17,10 +17,10 @@ namespace FastFood.Negocio
         }
 
         [DataObjectMethod(DataObjectMethodType.Select)]
-        public List<DALC.Producto> GetProductosPorTipo(int id_producto)
+        public List<DALC.Producto> GetProductosPorPedido(int id_pedido)
         {
             return CommonBC.ModeloFastFood.Producto.Where
-                (b => b.id_producto == id_producto).ToList();
+                (b => b.pedido_id_pedido == id_pedido).ToList();
         }
     }
 }

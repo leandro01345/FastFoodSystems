@@ -21,7 +21,8 @@ namespace FastFoodProject
     public partial class Sistema_Ordenes : Page
     {
         FastFood.Negocio.PedidoCollection pedidos = new FastFood.Negocio.PedidoCollection();
-        FastFood.DALC.Usuario usuario = new FastFood.DALC.Usuario(); 
+        FastFood.DALC.Usuario usuario = new FastFood.DALC.Usuario();
+        FastFood.Negocio.ProductoCollection productosList = new FastFood.Negocio.ProductoCollection();
         public Sistema_Ordenes( FastFood.DALC.Usuario _usuario)
         {
             InitializeComponent();
@@ -49,6 +50,15 @@ namespace FastFoodProject
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void pedidoDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            FastFood.DALC.Pedido pedido = (FastFood.DALC.Pedido)pedidoDataGrid.SelectedItem;
+            CollectionViewSource itemCollectionViewSource;
+            itemCollectionViewSource = (CollectionViewSource)(FindResource("productoViewSource"));
+            itemCollectionViewSource.Source = productosList.GetProductosPorPedido(pedido.id_pedido);
+            
         }
     }
 }

@@ -56,7 +56,11 @@ namespace FastFoodProject
                 if (!txtMontoIngresado.Equals("") && txtMontoIngresado.Text.Length <9 && txtMontoIngresado.Text != string.Empty)
                 {
                     int vuelto = int.Parse(this.txtMontoIngresado.Text) - totalPagar;
-                    this.txtVuelto.Text = "$" + vuelto;
+                    if (vuelto>0)
+                    {
+                        this.txtVuelto.Text = "$" + vuelto;
+                    }
+                    
                 }
                 
             }
@@ -87,11 +91,11 @@ namespace FastFoodProject
             p.valor = totalPagar;
             p.fecha = DateTime.Today;
             p.Create();
-            List<FastFood.Negocio.Producto> listAux = new List<FastFood.Negocio.Producto>();
+            List<Producto> listAux = new List<Producto>();
 
             foreach (FastFood.DALC.Producto productoItem in carritoProductos)
             {
-                FastFood.Negocio.Producto prod = new FastFood.Negocio.Producto();
+                Producto prod = new Producto();
                 prod.id_producto = 0;
                 prod.cantidad = productoItem.cantidad;
                 prod.nombre = productoItem.nombre;

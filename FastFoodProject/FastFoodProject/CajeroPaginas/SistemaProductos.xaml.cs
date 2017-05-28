@@ -27,6 +27,7 @@ namespace FastFoodProject
         List<FastFood.DALC.Producto> productosBD;
         int totalPagar;
         FastFood.DALC.Usuario usuario;
+        ConfirmarCompra confirmarCompra;
 
         //Constructores
         public Sistema_Productos(FastFood.DALC.Usuario _usuario)
@@ -121,9 +122,17 @@ namespace FastFoodProject
         {
             if (totalPagar > 0)
             {
-                this.carritoProductos = this.dg_carrito.Items.OfType<FastFood.DALC.Producto>().ToList();
-                ConfirmarCompra cf = new ConfirmarCompra(totalPagar, this.carritoProductos, this.usuario, this.textBox.Text);
-                cf.Show();
+                if (confirmarCompra == null)
+                {
+                    this.carritoProductos = this.dg_carrito.Items.OfType<FastFood.DALC.Producto>().ToList();
+                    confirmarCompra = new ConfirmarCompra(totalPagar, this.carritoProductos, this.usuario, this.textBox.Text);
+                    confirmarCompra.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debe limpiar la orden previa ya realizada.");
+                }
+               
                 //una ventana abierta cuando cierro otra, por lo que no puede ser a través del
                 //constructor.
 
@@ -151,6 +160,7 @@ namespace FastFoodProject
             }
             productoListBox.Items.Refresh();
             this.textBox.Text = "Ingresa los detalles adicionales del cliente aquí.";
+            confirmarCompra = null;
         }
 
         private void textBox_GotFocus(object sender, RoutedEventArgs e)

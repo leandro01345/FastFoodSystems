@@ -46,6 +46,7 @@ namespace FastFoodProject
             itemCollectionViewSource = (CollectionViewSource)(FindResource("pedidoViewSource"));
             itemCollectionViewSource.Source = pedidosUsuarioAux;
 
+
         }
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -55,11 +56,11 @@ namespace FastFoodProject
 
         private void pedidoDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            FastFood.DALC.Pedido pedido = (FastFood.DALC.Pedido)pedidoDataGrid.SelectedItem;
+            FastFood.DALC.Pedido pedidox = (FastFood.DALC.Pedido)pedidoDataGrid.SelectedItem;
             CollectionViewSource itemCollectionViewSource;
             itemCollectionViewSource = (CollectionViewSource)(FindResource("productoViewSource"));
-            itemCollectionViewSource.Source = productosList.GetProductosPorPedido(pedido.id_pedido);
-            
+            List<FastFood.DALC.Producto> productosTest = productosList.GetProductosPorPedido(pedidox.id_pedido);
+            itemCollectionViewSource.Source = productosTest;
         }
     }
 }

@@ -36,8 +36,6 @@
                 <DataGridTextColumn x:Name="nombreColumn" Binding="{Binding nombre}" Header="nombre" Width="150"/>
                 <DataGridTextColumn x:Name="cantidadColumn1" Binding="{Binding cantidad}" Header="cantidad" Width="80"/>
                 <DataGridTextColumn x:Name="valorColumn1" Binding="{Binding valor}" Header="valor" Width="100"/>
-                
-
             </DataGrid.Columns>
         </DataGrid>
 

@@ -44,10 +44,11 @@
                     <TextBox x:Name="txtNombreUpdate" HorizontalAlignment="Left" Height="26" Margin="146,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6"/>
                     <TextBox x:Name="txtCantidadUpdate" HorizontalAlignment="Left" Height="26" Margin="146,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6" Text="0"/>
                     <TextBox x:Name="txtValorUpdate" HorizontalAlignment="Left" Height="26" Margin="146,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Text="0"/>
-                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="386,45,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click"/>
-                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="386,141,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click"/>
+                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="463,52,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click"/>
+                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="423,166,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click"/>
                     <Label x:Name="lblId" Content="Id Producto:" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top" Width="87" FontFamily="Rockwell" FontSize="14" Foreground="#DDFBEEEE"/>
                     <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="146,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1"/>
+                    <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="447,109,0,0" VerticalAlignment="Top" Width="91" Click="btnEliminar_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Lista de productos" Margin="-2,-2,-2,0">

@@ -42,6 +42,7 @@ namespace FastFood.Negocio
                 password = user.password;
                 rut = user.rut;
                 tipoUsuario = user.tipoUsuario;
+                titular = user.titular;
                 return true;
             }
             catch (Exception)

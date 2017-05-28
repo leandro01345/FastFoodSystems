@@ -28,20 +28,27 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="32*"/>
+                        <ColumnDefinition Width="127*"/>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="362*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="lblProducto" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="56,36,0,0" VerticalAlignment="Top" Width="184" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20" Height="33"/>
-                    <Label x:Name="lblNombreU" Content="Usuario:" HorizontalAlignment="Left" Margin="35,79,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14" Height="26"/>
-                    <Label x:Name="lblPwd" Content="Password:" HorizontalAlignment="Left" Margin="35,125,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14" Height="26"/>
-                    <Label x:Name="lblTitular" Content="Titular:" HorizontalAlignment="Left" Margin="35,169,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14" Height="26"/>
-                    <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="28" Margin="115,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6"/>
-                    <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="28" Margin="115,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6"/>
-                    <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="28" Margin="115,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9"/>
-                    <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="443,159,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.275,-0.545" FontFamily="Rockwell" FontSize="16" Click="btnAgregar_Click"/>
-                    <Label x:Name="lblRut" Content="Rut:" HorizontalAlignment="Left" Margin="272,53,0,0" VerticalAlignment="Top" Width="92" BorderBrush="Black" Foreground="#DDF7EFEF" FontFamily="Rockwell" FontSize="14" Height="26"/>
-                    <Label x:Name="lblTipoUsuario" Content="Tipo Usuario:" HorizontalAlignment="Left" Margin="272,99,0,0" VerticalAlignment="Top" Width="92" Foreground="#DDF7F3F3" FontFamily="Rockwell" FontSize="14" Height="26"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="369,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFF1E9E9"/>
-                    <ComboBox x:Name="cboTipoUsuario" HorizontalAlignment="Left" Margin="369,97,0,0" VerticalAlignment="Top" Width="120" Background="#FFFFFBFB" Height="28">
+                    <Label x:Name="lblProducto" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="24,36,0,0" VerticalAlignment="Top" Width="184" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20" Height="33" Grid.ColumnSpan="6" Grid.Column="1"/>
+                    <Label x:Name="lblNombreU" Content="Usuario:" HorizontalAlignment="Left" Margin="3,79,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14" Height="26" Grid.Column="1"/>
+                    <Label x:Name="lblPwd" Content="Password:" HorizontalAlignment="Left" Margin="3,125,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14" Height="26" Grid.Column="1"/>
+                    <Label x:Name="lblTitular" Content="Titular:" HorizontalAlignment="Left" Margin="3,169,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14" Height="26" Grid.Column="1"/>
+                    <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="28" Margin="83,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6" Grid.ColumnSpan="7" Grid.Column="1"/>
+                    <TextBox x:Name="txtPwd" HorizontalAlignment="Left" Height="28" Margin="83,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6" Grid.ColumnSpan="7" Grid.Column="1"/>
+                    <TextBox x:Name="txtTitular" HorizontalAlignment="Left" Height="28" Margin="83,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Grid.ColumnSpan="7" Grid.Column="1"/>
+                    <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="193,159,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.275,-0.545" FontFamily="Rockwell" FontSize="16" Click="btnAgregar_Click" Grid.Column="7"/>
+                    <Label x:Name="lblRut" Content="Rut:" HorizontalAlignment="Left" Margin="22,53,0,0" VerticalAlignment="Top" Width="92" BorderBrush="Black" Foreground="#DDF7EFEF" FontFamily="Rockwell" FontSize="14" Height="26" Grid.Column="7"/>
+                    <Label x:Name="lblTipoUsuario" Content="Tipo Usuario:" HorizontalAlignment="Left" Margin="22,99,0,0" VerticalAlignment="Top" Width="92" Foreground="#DDF7F3F3" FontFamily="Rockwell" FontSize="14" Height="26" Grid.Column="7"/>
+                    <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="23" Margin="119,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFF1E9E9" Grid.Column="7"/>
+                    <ComboBox x:Name="cboTipoUsuario" HorizontalAlignment="Left" Margin="119,97,0,0" VerticalAlignment="Top" Width="120" Background="#FFFFFBFB" Height="28" Grid.Column="7">
                         <ComboBoxItem Content="Seleccione"/>
                         <ComboBoxItem x:Name="itemGerente" Content="Gerente" HorizontalAlignment="Left" Width="118"/>
                         <ComboBoxItem x:Name="itemCajero" Content="Cajero" HorizontalAlignment="Left" Width="118"/>
@@ -56,24 +63,23 @@
                     </Grid.ColumnDefinitions>
                     <Label x:Name="lblActualizar" Content="Actualizar Producto" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="202" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20"/>
                     <Label x:Name="lblNombreUsuarioUpdate" Content="Usuario:" HorizontalAlignment="Left" Margin="35,94,0,0" VerticalAlignment="Top" Width="77" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14"/>
-                    <Label x:Name="lblPwdUpdate" Content="Password:" HorizontalAlignment="Left" Margin="35,125,0,0" VerticalAlignment="Top" Width="77" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14"/>
-                    <Label x:Name="lblTitularUpdate" Content="Titular:" HorizontalAlignment="Left" Margin="35,159,0,0" VerticalAlignment="Top" Width="77" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14"/>
+                    <Label x:Name="lblTitularUpdate" Content="Titular:" HorizontalAlignment="Left" Margin="35,138,0,0" VerticalAlignment="Top" Width="77" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14"/>
                     <TextBox x:Name="txtNombreUpdate" HorizontalAlignment="Left" Height="26" Margin="131,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6"/>
-                    <TextBox x:Name="txtPwdUpdate" HorizontalAlignment="Left" Height="26" Margin="131,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6"/>
-                    <TextBox x:Name="txtTitularUpdate" HorizontalAlignment="Left" Height="26" Margin="131,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9"/>
-                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="299,156,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" FontSize="16" />
-                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="448,156,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" />
+                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="299,156,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click" />
+                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="448,156,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click" />
                     <Label x:Name="lblIdUser" Content="Id Usuario:" HorizontalAlignment="Left" Margin="35,58,0,0" VerticalAlignment="Top" Width="87" FontFamily="Rockwell" FontSize="14" Foreground="#DDFBEEEE"/>
                     <TextBox x:Name="txtIdUsuario" HorizontalAlignment="Left" Height="26" Margin="131,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1"/>
                     <Label x:Name="lblRutUp" Content="Rut" HorizontalAlignment="Left" Margin="305,58,0,0" VerticalAlignment="Top" Width="69" Foreground="#DDFDF9F9"/>
                     <Label x:Name="lbltipoUp" Content="Tipo Usuario" HorizontalAlignment="Left" Margin="299,102,0,0" VerticalAlignment="Top" Width="89" Foreground="#DDFFF8F8"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="379,100,0,0" VerticalAlignment="Top" Width="120" Background="#FFF5EFEF">
+                    <ComboBox x:Name="cboTipoUsuarioUp" HorizontalAlignment="Left" Margin="379,100,0,0" VerticalAlignment="Top" Width="120" Background="#FFF5EFEF">
                         <ComboBoxItem x:Name="cboItemSelect" Content="Seleccione" HorizontalAlignment="Left" Width="118"/>
                         <ComboBoxItem x:Name="cboGerenteUp" Content="Gerente" HorizontalAlignment="Left" Width="118"/>
                         <ComboBoxItem x:Name="cboCajeroUp" Content="Cajero" HorizontalAlignment="Left" Width="118"/>
                         <ComboBoxItem x:Name="cboCocineroUp" Content="Cocinero" HorizontalAlignment="Left" Width="118"/>
                     </ComboBox>
-                    <TextBox x:Name="txtRutUpdate" HorizontalAlignment="Left" Height="23" Margin="379,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFFDFBFB"/>
+                    <TextBox x:Name="txtRutUpdate" HorizontalAlignment="Left" Height="27" Margin="379,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFFDFBFB"/>
+                    <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="504,55,0,0" VerticalAlignment="Top" Width="92" Click="btnEliminar_Click"/>
+                    <TextBox x:Name="txtTitularUpdate" HorizontalAlignment="Left" Height="26" Margin="131,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFFFFDFD"/>
 
                 </Grid>
             </TabItem>

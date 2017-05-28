@@ -31,13 +31,26 @@ namespace FastFoodProject.GerentePaginas
             itemCollectionViewSource.Source = productosGerente;
         }
 
+        public void limpiarAgregar() {
+            txtNombre.Text = string.Empty;
+            txtCantidad.Text = string.Empty;
+            txtValor.Text = string.Empty;
+        }
+        public void limpiarUpdate() {
+            txtNombreUpdate.Text = string.Empty;
+            txtValorUpdate.Text = string.Empty;
+            txtCantidadUpdate.Text = string.Empty;
+
+        }
+
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
-            Producto prod = new Producto();
+           
 
             try
             {
-               
+                Producto prod = new Producto();
+
                 if (!prod.Read())
                 {
                    
@@ -46,6 +59,7 @@ namespace FastFoodProject.GerentePaginas
                     prod.cantidad = int.Parse(txtCantidad.Text);
                    
                     prod.Create();
+                    this.limpiarAgregar();
 
                 }
                     
@@ -90,6 +104,27 @@ namespace FastFoodProject.GerentePaginas
                     prod.valor = int.Parse(txtValorUpdate.Text);
                     prod.cantidad = int.Parse(txtCantidadUpdate.Text);
                     prod.Update();
+                    this.limpiarUpdate();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Producto prod = new Producto();
+                prod.id_producto = int.Parse(txtId.Text);
+                if (prod.Read())
+                {
+                    prod.Delete();
+                    this.limpiarUpdate();
+                    
                 }
             }
             catch (Exception)

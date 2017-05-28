@@ -29,14 +29,141 @@ namespace FastFoodProject.GerentePaginas
             itemCollectionViewSource.Source = usuarios.GetUsuarios();
         }
 
+        public void limpiarAgregar() {
+
+            txtNombre.Text=string.Empty;
+            txtPwd.Text = string.Empty;
+            txtTitular.Text = string.Empty;
+            txtRut.Text = string.Empty;
+            cboTipoUsuario.SelectedIndex = 0;
+        }
+
+        public void limpiarUpdate() {
+            txtIdUsuario.Text = string.Empty;
+            txtNombreUpdate.Text = string.Empty;
+            txtRutUpdate.Text = string.Empty;
+            txtTitularUpdate.Text = string.Empty;
+            cboTipoUsuarioUp.SelectedIndex = 0;
+
+        }
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
+           
+            try
+            {
+                Usuario usu = new Usuario();
+                usu.usuario1 = txtNombre.Text;
+                usu.password = txtPwd.Text;
+                usu.titular = txtTitular.Text;
+                usu.rut = txtRut.Text;
+                if (itemCajero.IsSelected)
+                {
+                    usu.tipoUsuario = 1;
+                }
+                if (itemCocinero.IsSelected)
+                {
+                    usu.tipoUsuario = 2;
+                }
+                if (itemGerente.IsSelected)
+                {
+                    usu.tipoUsuario = 3;
+                }
+
+                usu.Create();
+                this.limpiarAgregar();
+             
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Usuario usu = new Usuario();
+                usu.id_usuario = int.Parse(txtIdUsuario.Text);
+                if (usu.Read())
+                {
+                    txtNombreUpdate.Text = usu.usuario1;
+                    txtTitularUpdate.Text = usu.titular;
+                    txtRutUpdate.Text = usu.rut;
+                    
+                    if (usu.tipoUsuario == 1)
+                    {
+                        cboTipoUsuarioUp.SelectedIndex = 2;
+                    }
+                    if (usu.tipoUsuario == 2)
+                    {
+                        cboTipoUsuarioUp.SelectedIndex = 3;
+                    }
+                    if (usu.tipoUsuario == 3)
+                    {
+                        cboTipoUsuarioUp.SelectedIndex = 4;
+                    }
+
+                  
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+         
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+
             
             try
             {
-                if (true)
+                Usuario usu = new Usuario();
+                usu.id_usuario = int.Parse(txtIdUsuario.Text);
+                if (usu.Read())
                 {
-                    
+                    usu.usuario1 = txtNombreUpdate.Text;
+                    usu.rut = txtRutUpdate.Text;
+                    usu.titular = txtTitularUpdate.Text;
+                    if (cboCajeroUp.IsSelected)
+                    {
+                        usu.tipoUsuario = 1;
+                    }
+                    if (cboCocineroUp.IsSelected)
+                    {
+                        usu.tipoUsuario = 2;
+                    }
+                    if (cboGerenteUp.IsSelected)
+                    {
+                        usu.tipoUsuario = 3;
+                    }
+
+                    usu.Update();
+                    this.limpiarUpdate();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+           
+            try
+            {
+                Usuario usu = new Usuario();
+                usu.id_usuario = int.Parse(txtIdUsuario.Text);
+                if (usu.Read())
+                {
+                    usu.Delete();
+                    this.limpiarUpdate();
                 }
             }
             catch (Exception)

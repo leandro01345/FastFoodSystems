@@ -25,7 +25,7 @@ namespace FastFood.Negocio
             nombre = string.Empty;
             cantidad = 0;
             valor = 0;
-            pedido_id_pedido = 0;
+            pedido_id_pedido = null;
 
         }
 

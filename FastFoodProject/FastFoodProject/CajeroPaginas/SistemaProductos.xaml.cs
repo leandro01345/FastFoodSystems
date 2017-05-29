@@ -132,7 +132,7 @@ namespace FastFoodProject
                 }
                 else
                 {
-                    MessageBox.Show("Debe limpiar la orden previa ya realizada.");
+                    MessageBox.Show("Sólo una ventana de confirmación puede estar abierta.","Aviso");
                 }
                
                 //una ventana abierta cuando cierro otra, por lo que no puede ser a través del

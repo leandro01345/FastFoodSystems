@@ -71,13 +71,21 @@ namespace FastFoodProject.GerentePaginas
                     usu.tipoUsuario = 3;
                 }
 
-                usu.Create();
+                if(usu.Create())
+                {
+                    MessageBox.Show("¡Inserción exitosa!", "Aviso");
+                }
+                else
+                {
+                    MessageBox.Show("¡Inserción fallida!", "Error");
+                }
                 this.limpiarAgregar();
-             
+                
+
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Inserción fallida!", "Error");
                 throw;
             }
         }
@@ -106,13 +114,12 @@ namespace FastFoodProject.GerentePaginas
                     {
                         cboTipoUsuarioUp.SelectedIndex = 4;
                     }
-
-                  
                 }
+               
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Búsqueda fallida!", "Error");
                 throw;
             }
          
@@ -146,11 +153,12 @@ namespace FastFoodProject.GerentePaginas
 
                     usu.Update();
                     this.limpiarUpdate();
+                    MessageBox.Show("¡Actualización exitosa!", "Error");
                 }
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Actualización fallida! recuerde buscar por el ID.", "Error");
                 throw;
             }
         }
@@ -167,10 +175,11 @@ namespace FastFoodProject.GerentePaginas
                     usu.Delete();
                     this.limpiarUpdate();
                 }
+                MessageBox.Show("¡Eliminación exitosa!", "Aviso");
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Eliminación fallida!", "Error");
                 throw;
             }
         }

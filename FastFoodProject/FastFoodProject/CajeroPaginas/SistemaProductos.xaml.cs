@@ -27,7 +27,8 @@ namespace FastFoodProject
         List<FastFood.DALC.Producto> productosBD;
         int totalPagar;
         FastFood.DALC.Usuario usuario;
-        ConfirmarCompra confirmarCompra;
+        public static ConfirmarCompra confirmarCompra;
+        public static bool triggerLimpiar = false;
 
         //Constructores
         public Sistema_Productos(FastFood.DALC.Usuario _usuario)
@@ -39,6 +40,7 @@ namespace FastFoodProject
             usuario = _usuario;
             productosBD = productos.GetProductos();
             ActualizarProductos();
+            limpiar();
         }
 
         //Constructores
@@ -166,12 +168,40 @@ namespace FastFoodProject
         private void textBox_GotFocus(object sender, RoutedEventArgs e)
         {
             if (this.textBox.Text == "Ingresa los detalles adicionales del cliente aquí.") textBox.Text = "";
-
+            
         }
 
         private void textBox_LostFocus(object sender, RoutedEventArgs e)
         {
             if (this.textBox.Text == "") textBox.Text = "Ingresa los detalles adicionales del cliente aquí.";
+        }
+
+        void limpiar()
+        {
+            ActualizarProductos();
+            this.dg_carrito.Items.Clear();
+            this.lblPrecioTotal.Content = "$0";
+            int i = 0;
+            this.totalPagar = 0;
+            this.carritoProductos = productosBD;
+            foreach (FastFood.DALC.Producto p in carritoProductos)
+            {
+
+                carritoProductos.ElementAt(i).cantidad = 1;
+                i++;
+            }
+            productoListBox.Items.Refresh();
+            this.textBox.Text = "Ingresa los detalles adicionales del cliente aquí.";
+            confirmarCompra = null;
+        }
+
+        private void Page_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (triggerLimpiar)
+            {
+                triggerLimpiar = false;
+                limpiar();
+            }
         }
     }
 }

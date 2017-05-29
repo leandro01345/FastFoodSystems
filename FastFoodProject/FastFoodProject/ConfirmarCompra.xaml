@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastFoodProject"
         mc:Ignorable="d"
-        Title="ConfirmarCompra" Height="404.5" Width="508" ResizeMode="NoResize">
+        Title="ConfirmarCompra" Height="404.5" Width="508" ResizeMode="NoResize" Closed="Window_Closed">
     <Grid Background="#FF131313">
         <TextBox x:Name="txtMontoIngresado" HorizontalAlignment="Left" Height="44" Margin="158,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="0" Foreground="White" GotFocus="txtMontoIngresado_GotFocus" FontSize="18" KeyUp="txtMontoIngresado_KeyUp" TextChanged="txtMontoIngresado_TextChanged" MaxLength="9" />
         <Label x:Name="lblTotalPagar" Content="$0" HorizontalAlignment="Left" Margin="136,56,0,0" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="22"/>

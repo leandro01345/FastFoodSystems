@@ -27,6 +27,8 @@ namespace FastFoodProject
         PedidoCollection pedidos = new PedidoCollection();
         List<FastFood.DALC.Producto> carritoProductos;
         int totalPagar;
+        private  int vuelto;
+        private int montoIngresado;
         String descripcion;
 
         public ConfirmarCompra()
@@ -42,6 +44,7 @@ namespace FastFoodProject
             this.carritoProductos = _carritoProductos;
             this.usuario = _usuario;
             this.descripcion = _descripcion;
+            
         }
 
         private void txtMontoIngresado_GotFocus(object sender, RoutedEventArgs e)
@@ -55,7 +58,7 @@ namespace FastFoodProject
             {
                 if (!txtMontoIngresado.Equals("") && txtMontoIngresado.Text.Length <9 && txtMontoIngresado.Text != string.Empty)
                 {
-                    int vuelto = int.Parse(this.txtMontoIngresado.Text) - totalPagar;
+                     vuelto = int.Parse(this.txtMontoIngresado.Text) - totalPagar;
                     if (vuelto>0)
                     {
                         this.txtVuelto.Text = "$" + vuelto;
@@ -76,43 +79,53 @@ namespace FastFoodProject
             string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
             ((TextBox)sender).Text = s;
             
+            
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            FastFood.Negocio.Pedido  p = new FastFood.Negocio.Pedido();
-            if (descripcion== "Ingresa los detalles adicionales del cliente aquí.")
+            if (!txtMontoIngresado.Equals("") && txtMontoIngresado.Text.Length < 9 && txtMontoIngresado.Text != string.Empty)
             {
-                descripcion = "Sin descripción";
+                montoIngresado = int.Parse(txtMontoIngresado.Text);
             }
-            p.descripcion = descripcion;
-            p.estado = "en cola";
-            p.usuario_id_usuario = usuario.id_usuario;
-            p.valor = totalPagar;
-            p.fecha = DateTime.Today;
-            p.Create();
-            List<Producto> listAux = new List<Producto>();
-
-            foreach (FastFood.DALC.Producto productoItem in carritoProductos)
+            if (montoIngresado>=totalPagar)
             {
-                Producto prod = new Producto();
-                prod.id_producto = 0;
-                prod.cantidad = productoItem.cantidad;
-                prod.nombre = productoItem.nombre;
-                prod.valor = productoItem.valor;
-                prod.pedido_id_pedido = pedidos.GetPedidos().Last().id_pedido;
-                listAux.Add(prod);
-                productoItem.cantidad = 1;
-            }
+                FastFood.Negocio.Pedido p = new FastFood.Negocio.Pedido();
+                if (descripcion == "Ingresa los detalles adicionales del cliente aquí.")
+                {
+                    descripcion = "Sin descripción";
+                }
+                p.descripcion = descripcion;
+                p.estado = "en cola";
+                p.usuario_id_usuario = usuario.id_usuario;
+                p.valor = totalPagar;
+                p.fecha = DateTime.Today;
+                p.Create();
+                List<Producto> listAux = new List<Producto>();
+
+                foreach (FastFood.DALC.Producto productoItem in carritoProductos)
+                {
+                    Producto prod = new Producto();
+                    prod.id_producto = 0;
+                    prod.cantidad = productoItem.cantidad;
+                    prod.nombre = productoItem.nombre;
+                    prod.valor = productoItem.valor;
+                    prod.pedido_id_pedido = pedidos.GetPedidos().Last().id_pedido;
+                    listAux.Add(prod);
+                    productoItem.cantidad = 1;
+                }
 
 
-            foreach (FastFood.Negocio.Producto productoItem in listAux)
-            {
-                productoItem.Create();
-            }
+                foreach (FastFood.Negocio.Producto productoItem in listAux)
+                {
+                    productoItem.Create();
+                }
                 this.Close();
 
-            imprimirBoleta();
+                imprimirBoleta();
+                Sistema_Productos.triggerLimpiar = true;
+            }
+           
         }
 
         private void imprimirBoleta()
@@ -129,6 +142,12 @@ namespace FastFoodProject
             }
             Console.WriteLine("---------------------------");
             Console.Write("TOTAL: " + this.totalPagar);
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Sistema_Productos.confirmarCompra = null;
+            
         }
     }
 }

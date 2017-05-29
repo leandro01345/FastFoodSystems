@@ -55,11 +55,27 @@ namespace FastFoodProject.GerentePaginas
                 {
                    
                     prod.nombre = txtNombre.Text;
-                    prod.valor = int.Parse(txtValor.Text);
-                    prod.pedido_id_pedido = null;
-                    prod.cantidad = 1;
-                    prod.Create();
-                    this.limpiarAgregar();
+                    if (!txtValor.Text.Equals("") && txtValor.Text.Length>0)
+                    {
+                        prod.valor = int.Parse(txtValor.Text);
+                        prod.pedido_id_pedido = null;
+                        prod.cantidad = 1;
+                        if(prod.Create())
+                        {
+                            MessageBox.Show("¡Inserción exitosa!", "Aviso");
+                        }
+                        else
+                        {
+                            MessageBox.Show("¡Inserción fallida!", "Error");
+                        }
+                        this.limpiarAgregar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("¡Inserción fallida!", "Error");
+                    }
+                    
+                    
 
                 }
                     
@@ -67,7 +83,7 @@ namespace FastFoodProject.GerentePaginas
             }
             catch (Exception )
             {
-
+                MessageBox.Show("¡Inserción fallida!", "Error");
                 throw;
             }
         }
@@ -83,11 +99,15 @@ namespace FastFoodProject.GerentePaginas
                     txtNombreUpdate.Text = prod.nombre;
                     txtValorUpdate.Text = prod.valor.ToString();
                     txtCantidadUpdate.Text = prod.cantidad.ToString();
+                     }
+                    else
+                    {
+                        MessageBox.Show("¡Búsqueda fallida! Busque por ID.", "Error");
                     }
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Búsqueda fallida! Busque por ID.", "Error");
                 throw;
             }
         }
@@ -105,11 +125,12 @@ namespace FastFoodProject.GerentePaginas
                     prod.cantidad = int.Parse(txtCantidadUpdate.Text);
                     prod.Update();
                     this.limpiarUpdate();
+                    MessageBox.Show("¡Actualizado con exito!", "Aviso");
                 }
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡Actualización fallida! recuerde buscar por el ID.", "Error");
                 throw;
             }
         }
@@ -124,12 +145,12 @@ namespace FastFoodProject.GerentePaginas
                 {
                     prod.Delete();
                     this.limpiarUpdate();
-                    
+                    MessageBox.Show("¡Eliminado con exito!", "Aviso");
                 }
             }
             catch (Exception)
             {
-
+                MessageBox.Show("¡No se puedo eliminar correctamente!", "Error");
                 throw;
             }
         }

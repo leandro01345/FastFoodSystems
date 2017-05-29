@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="600"
       Title="Sistema_Productos"
-      xmlns:dd="urn:gong-wpf-dragdrop">
+      xmlns:dd="urn:gong-wpf-dragdrop" GotFocus="Page_GotFocus">
     <Page.Resources>
         <CollectionViewSource x:Key="ItemCollectionViewSource" CollectionViewType="ListCollectionView"/>
         <local:FastFoodDataSet x:Key="fastFoodDataSet"/>

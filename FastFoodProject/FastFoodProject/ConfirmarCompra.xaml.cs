@@ -111,7 +111,24 @@ namespace FastFoodProject
                 productoItem.Create();
             }
                 this.Close();
-            
+
+            imprimirBoleta();
+        }
+
+        private void imprimirBoleta()
+        {
+            Console.WriteLine("FastFood Systems");
+            Console.WriteLine("Pedido N°: " + pedidos.GetPedidos().Last().id_pedido);
+            Console.WriteLine("---------------------------");
+            foreach (FastFood.DALC.Producto productoItem in carritoProductos)
+            {
+
+                Console.Write(productoItem.nombre.Trim() + " X" + productoItem.cantidad);
+                Console.WriteLine("   - " + productoItem.valor);
+                
+            }
+            Console.WriteLine("---------------------------");
+            Console.Write("TOTAL: " + this.totalPagar);
         }
     }
 }

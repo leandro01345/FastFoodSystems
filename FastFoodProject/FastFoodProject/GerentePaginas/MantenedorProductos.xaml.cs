@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FastFood.Negocio;
+using System.Text.RegularExpressions;
 
 namespace FastFoodProject.GerentePaginas
 {
@@ -56,6 +57,7 @@ namespace FastFoodProject.GerentePaginas
                     prod.nombre = txtNombre.Text;
                     prod.valor = int.Parse(txtValor.Text);
                     prod.pedido_id_pedido = null;
+                    prod.cantidad = 1;
                     prod.Create();
                     this.limpiarAgregar();
 
@@ -130,6 +132,30 @@ namespace FastFoodProject.GerentePaginas
 
                 throw;
             }
+        }
+
+        private void txtValor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
+            ((TextBox)sender).Text = s;
+        }
+
+        private void txtId_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
+            ((TextBox)sender).Text = s;
+        }
+
+        private void txtCantidadUpdate_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
+            ((TextBox)sender).Text = s;
+        }
+
+        private void txtValorUpdate_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
+            ((TextBox)sender).Text = s;
         }
     }
 }

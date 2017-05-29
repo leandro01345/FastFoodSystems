@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FastFood.Negocio;
+using System.Text.RegularExpressions;
+
 namespace FastFoodProject.GerentePaginas
 {
     /// <summary>
@@ -171,6 +173,12 @@ namespace FastFoodProject.GerentePaginas
 
                 throw;
             }
+        }
+
+        private void txtIdUsuario_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string s = Regex.Replace(((TextBox)sender).Text, @"[^\d]", "");
+            ((TextBox)sender).Text = s;
         }
     }
 }

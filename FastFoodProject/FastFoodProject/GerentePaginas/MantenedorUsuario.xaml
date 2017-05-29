@@ -78,7 +78,7 @@
                     <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="365,58,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click" />
                     <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="365,112,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click" />
                     <Label x:Name="lblIdUser" Content="Id Usuario:" HorizontalAlignment="Left" Margin="35,58,0,0" VerticalAlignment="Top" Width="87" FontFamily="Rockwell" FontSize="14" Foreground="#DDFBEEEE"/>
-                    <TextBox x:Name="txtIdUsuario" HorizontalAlignment="Left" Height="26" Margin="131,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1"/>
+                    <TextBox x:Name="txtIdUsuario" HorizontalAlignment="Left" Height="26" Margin="131,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1" TextChanged="txtIdUsuario_TextChanged"/>
                     <Label x:Name="lblRutUp" Content="Rut" HorizontalAlignment="Left" Margin="35,173,0,0" VerticalAlignment="Top" Width="69" Foreground="#DDFDF9F9"/>
                     <Label x:Name="lbltipoUp" Content="Tipo Usuario" HorizontalAlignment="Left" Margin="35,209,0,0" VerticalAlignment="Top" Width="89" Foreground="#DDFFF8F8"/>
                     <ComboBox x:Name="cboTipoUsuarioUp" HorizontalAlignment="Left" Margin="131,207,0,0" VerticalAlignment="Top" Width="149" Background="#FFF5EFEF">

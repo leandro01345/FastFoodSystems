@@ -16,8 +16,8 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnGestionUsuario" Content="Gestion de usuarios" Margin="0,11,179,0" VerticalAlignment="Top"  BorderBrush="#FFEE3355" Background="#FFEE3355" Click="btnGestionUsuario_Click" HorizontalAlignment="Right" Width="169" Height="32"/>
-        <Button x:Name="btnMantenedorProductos" Content="Gestion de productos" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="169" BorderBrush="#FFEE3355" Click="btnMantenedorProductos_Click" Margin="0,11,349,0"/>
+        <Button x:Name="btnGestionUsuario" Content="Gestión de usuarios" Margin="0,11,179,0" VerticalAlignment="Top"  BorderBrush="#FFEE3355" Background="#FFEE3355" Click="btnGestionUsuario_Click" HorizontalAlignment="Right" Width="169" Height="32"/>
+        <Button x:Name="btnMantenedorProductos" Content="Gestión de productos" VerticalAlignment="Top" Background="#FFEE3355" HorizontalAlignment="Right" Width="169" BorderBrush="#FFEE3355" Click="btnMantenedorProductos_Click" Margin="0,11,349,0"/>
         <Frame x:Name="GerenteFrame" Content="" Margin="10,79,10,28" NavigationUIVisibility="Hidden" Navigated="GerenteFrame_Navigated"/>
         <TextBlock x:Name="txtTitleGerente" Margin="25,9,618,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4"><Run Text="Fast food Syste"/><Run Text="m"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="txtVersionGerente" Margin="499,0,10,-2" TextWrapping="Wrap" FontFamily="Roboto" FontSize="16" FontStyle="Italic" Foreground="#DDB4B4B4" Text="v0.2.0" TextAlignment="Right" Height="28" VerticalAlignment="Bottom"/>

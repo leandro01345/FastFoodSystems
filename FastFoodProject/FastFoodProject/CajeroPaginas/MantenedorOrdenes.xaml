@@ -15,7 +15,7 @@
 
     <Grid DataContext="{StaticResource pedidoViewSource}">
         <GroupBox x:Name="groupBox_Copy" Header="Ordenes" Margin="320,26,10,11" Background="{x:Null}"/>
-        <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="320,59,10,11" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" SelectionChanged="pedidoDataGrid_SelectionChanged">
+        <DataGrid x:Name="pedidoDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="320,59,10,11" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" CanUserDeleteRows="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" SelectionChanged="pedidoDataGrid_SelectionChanged" Foreground="#DD000000">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn" Binding="{Binding id_pedido}" Header="id pedido" IsReadOnly="True" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="300"/>

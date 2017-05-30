@@ -9,7 +9,7 @@
     <Grid Background="#FF131313">
         <TextBox x:Name="txtMontoIngresado" HorizontalAlignment="Left" Height="44" Margin="158,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="0" Foreground="White" GotFocus="txtMontoIngresado_GotFocus" FontSize="18" KeyUp="txtMontoIngresado_KeyUp" TextChanged="txtMontoIngresado_TextChanged" MaxLength="9" />
         <Label x:Name="lblTotalPagar" Content="$0" HorizontalAlignment="Left" Margin="136,56,0,0" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="22"/>
-        <Button x:Name="button" Content="Confirmar compra" Margin="146,298,0,22" Height="Auto" HorizontalAlignment="Left" Width="221" Background="#FFD12E69" BorderBrush="#FFD12E69" Click="button_Click"/>
+        <Button x:Name="button" Content="Confirmar compra" Margin="146,298,0,22" Height="Auto" HorizontalAlignment="Left" Width="221" Background="#FFD12E44" BorderBrush="#FFD12E69" Click="button_Click"/>
         <Label x:Name="lblTotalPagar_Copy" Content="Total a pagar" Margin="84,17,82,291" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
         <Label x:Name="lblVuelto" Content="Vuelto" Margin="84,192,82,114" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" FontSize="20"/>
         <TextBox x:Name="txtVuelto" IsReadOnly="True" HorizontalAlignment="Left" Height="36" Margin="161,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Text="$0" Foreground="White" IsReadOnlyCaretVisible="True" FontSize="16"/>

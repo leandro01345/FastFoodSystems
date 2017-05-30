@@ -22,12 +22,12 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="lblProducto" Content="Agregue un nuevo producto" HorizontalAlignment="Left" Margin="55,22,0,0" VerticalAlignment="Top" Width="274" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20"/>
-                    <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14"/>
-                    <Label x:Name="lblValor" Content="Valor:" HorizontalAlignment="Left" Margin="60,107,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14"/>
+                    <Label x:Name="lblProducto" Content="Agregue un nuevo producto" HorizontalAlignment="Left" Margin="55,22,0,0" VerticalAlignment="Top" Width="274" BorderBrush="Black" Foreground="#DDF5F1F1" FontSize="20"/>
+                    <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF1E3E3" FontSize="14"/>
+                    <Label x:Name="lblValor" Content="Valor:" HorizontalAlignment="Left" Margin="60,107,0,0" VerticalAlignment="Top" Width="75" Foreground="#DDF7F1F1" FontSize="14"/>
                     <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="28" Margin="135,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6"/>
                     <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="28" Margin="135,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Text="0" TextChanged="txtValor_TextChanged"/>
-                    <Button x:Name="btnAgregar" Content="Agregar" Margin="60,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.275,-0.545" FontFamily="Rockwell" FontSize="16" Click="btnAgregar_Click" HorizontalAlignment="Left" Width="101"/>
+                    <Button x:Name="btnAgregar" Content="Agregar" Margin="60,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.275,-0.545" FontSize="16" Click="btnAgregar_Click" HorizontalAlignment="Left" Width="101"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Editar producto">
@@ -35,16 +35,16 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="lblActualizar" Content="Actualizar Producto" HorizontalAlignment="Left" Margin="41,17,0,0" VerticalAlignment="Top" Width="202" BorderBrush="Black" Foreground="#DDF5F1F1" FontFamily="Rockwell" FontSize="20"/>
-                    <Label x:Name="lblNombreUpdate" Content="Nombre:" HorizontalAlignment="Left" Margin="41,93,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF1E3E3" FontFamily="Rockwell" FontSize="14"/>
-                    <Label x:Name="lblCantidadUpdate" Content="Cantidad:" HorizontalAlignment="Left" Margin="41,127,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF0E1E1" FontFamily="Rockwell" FontSize="14"/>
-                    <Label x:Name="lblValorUpdate" Content="Valor:" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF7F1F1" FontFamily="Rockwell" FontSize="14"/>
+                    <Label x:Name="lblActualizar" Content="Actualizar producto" HorizontalAlignment="Left" Margin="41,17,0,0" VerticalAlignment="Top" Width="202" BorderBrush="Black" Foreground="#DDF5F1F1" FontSize="20"/>
+                    <Label x:Name="lblNombreUpdate" Content="Nombre:" HorizontalAlignment="Left" Margin="41,93,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF1E3E3" FontSize="14"/>
+                    <Label x:Name="lblCantidadUpdate" Content="Cantidad:" HorizontalAlignment="Left" Margin="41,127,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF0E1E1" FontSize="14"/>
+                    <Label x:Name="lblValorUpdate" Content="Valor:" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" Width="87" Foreground="#DDF7F1F1" FontSize="14"/>
                     <TextBox x:Name="txtNombreUpdate" HorizontalAlignment="Left" Height="26" Margin="146,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFECE6E6"/>
                     <TextBox x:Name="txtCantidadUpdate" HorizontalAlignment="Left" Height="26" Margin="146,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFE8E6E6" Text="0" TextChanged="txtCantidadUpdate_TextChanged"/>
                     <TextBox x:Name="txtValorUpdate" HorizontalAlignment="Left" Height="26" Margin="146,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFEEE9E9" Text="0" TextChanged="txtValorUpdate_TextChanged"/>
-                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="345,55,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnBuscar_Click"/>
-                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="345,161,0,0" VerticalAlignment="Top" Width="115" FontFamily="Rockwell" FontSize="16" Click="btnUpdate_Click"/>
-                    <Label x:Name="lblId" Content="Id Producto:" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top" Width="87" FontFamily="Rockwell" FontSize="14" Foreground="#DDFBEEEE"/>
+                    <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="345,55,0,0" VerticalAlignment="Top" Width="115" FontSize="16" Click="btnBuscar_Click"/>
+                    <Button x:Name="btnUpdate" Content="Actualizar" HorizontalAlignment="Left" Margin="345,161,0,0" VerticalAlignment="Top" Width="115" FontSize="16" Click="btnUpdate_Click"/>
+                    <Label x:Name="lblId" Content="Id Producto:" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top" Width="87" FontSize="14" Foreground="#DDFBEEEE"/>
                     <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="146,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Background="#FFF7F1F1" TextChanged="txtId_TextChanged"/>
                     <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="345,109,0,0" VerticalAlignment="Top" Width="115" Click="btnEliminar_Click"/>
                 </Grid>

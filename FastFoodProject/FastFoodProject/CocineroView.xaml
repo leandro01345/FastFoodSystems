@@ -24,17 +24,23 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <GroupBox x:Name="groupBox1" Header="Pedidos en cola&#xA;Del más reciente al mas antiguo." Margin="25,78,0,0" HorizontalAlignment="Left" Width="302" Height="329" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox1" Header="Pedidos en cola&#xA;Del más reciente al mas antiguo.&#xD;&#xA;" Margin="25,78,0,0" HorizontalAlignment="Left" Width="302" Height="329" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtTitleCocinero1" Margin="25,9,484,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontFamily="Roboto" FontSize="22" FontStyle="Italic" Foreground="#DDB4B4B4"><Run Text="Fast food Syste"/><Run Text="m"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="txtVersionCocinero1" Margin="499,0,10,-2" TextWrapping="Wrap" FontFamily="Roboto" FontSize="16" FontStyle="Italic" Foreground="#DDB4B4B4" Text="v0.2.0" TextAlignment="Right" Height="28" VerticalAlignment="Bottom"/>
-        <GroupBox x:Name="groupBox1_Copy" Header="Pedidos en preparación&#xA;Del más reciente al más antiguo." Margin="416,78,0,0" HorizontalAlignment="Left" Width="320" Height="329" VerticalAlignment="Top"/>
-        <GroupBox x:Name="groupBox1_Copy1" Header="Pedidos listos&#xA;Del más reciente al más antiguo." Margin="800,78,0,0" HorizontalAlignment="Left" Width="304" Height="329" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox1_Copy" Header="Pedidos en preparación&#xD;&#xA;&#xD;&#xA;" Margin="416,78,0,0" HorizontalAlignment="Left" Width="320" Height="329" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox1_Copy1" Header="Pedidos listos&#xA;&#xD;&#xA;" Margin="800,78,0,0" HorizontalAlignment="Left" Width="304" Height="329" VerticalAlignment="Top"/>
         <GroupBox x:Name="groupBox1_Copy2" Header="Productos del pedido seleccionado" Margin="25,430,0,26" HorizontalAlignment="Left" Width="711"/>
         <GroupBox x:Name="groupBox1_Copy3" Header="Info adicional" Margin="800,490,45,31"/>
         <DataGrid DataContext="{StaticResource pedidoViewSource}" x:Name="DgPedidosCola" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}"   Margin="25,128,0,0" 
                   RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" HorizontalAlignment="Left" 
-                  Width="302" Height="279" VerticalAlignment="Top" Background="#FFC399FF" dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True"
+                  Width="302" Height="279" VerticalAlignment="Top" dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True"
                   CanUserReorderColumns="False" IsReadOnly="True" CanUserSortColumns="False" SelectionChanged="DgPedidosCola_SelectionChanged">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9CDD9" Offset="0.019"/>
+                    <GradientStop Color="#FFC57BAA" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn" Binding="{Binding id_pedido}" Header="N° Orden" IsReadOnly="True" Width="80"/>
                 <DataGridTextColumn x:Name="descripcionColumn" Binding="{Binding descripcion}" Header="descripcion" Width="200"/>
@@ -42,16 +48,28 @@
         </DataGrid>
         <DataGrid x:Name="DgPedidosCurso" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="416,128,0,0" 
                   RowDetailsVisibilityMode="VisibleWhenSelected" CanUserAddRows="False" CanUserResizeRows="False" HorizontalAlignment="Left" 
-                  Width="320" Height="279" VerticalAlignment="Top" Background="#FFFFF7A6" dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True"
+                  Width="320" Height="279" VerticalAlignment="Top" dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True"
                   CanUserReorderColumns="False" LoadingRow="DgPedidosCurso_LoadingRow" IsReadOnly="True" CanUserSortColumns="False" SelectionChanged="DgPedidosCurso_SelectionChanged" MouseLeftButtonUp="DgPedidosCurso_MouseLeftButtonUp">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF2694C7" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn1" Binding="{Binding id_pedido}" Header="N° Orden" IsReadOnly="True" Width="100"/>
                 <DataGridTextColumn x:Name="descripcionColumn1" Binding="{Binding descripcion}" Header="descripcion" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid x:Name="DgPedidosListos" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="800,128,0,0" RowDetailsVisibilityMode="VisibleWhenSelected" 
-                  CanUserAddRows="False" CanUserResizeRows="False" HorizontalAlignment="Left" Width="304" Height="279" VerticalAlignment="Top" Background="#FF6BFFD7"
+                  CanUserAddRows="False" CanUserResizeRows="False" HorizontalAlignment="Left" Width="304" Height="279" VerticalAlignment="Top"
                   dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="True" CanUserReorderColumns="False" IsReadOnly="True" CanUserSortColumns="False" SelectionChanged="DgPedidosListos_SelectionChanged">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDED7FF" Offset="0"/>
+                    <GradientStop Color="#FF00E89E" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="id_pedidoColumn2" Binding="{Binding id_pedido}" Header="N° Orden" IsReadOnly="True" Width="100"/>
                 <DataGridTextColumn x:Name="descripcionColumn2" Binding="{Binding descripcion}" Header="descripcion" Width="SizeToHeader"/>
@@ -72,7 +90,7 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnDesconectar_Copy" VerticalAlignment="Top" Background="#FF00E89E" HorizontalAlignment="Right" Width="120" Margin="0,430,145,0" BorderBrush="#FF00E89E" Height="43" >
+        <Button x:Name="btnDesconectar_Copy" VerticalAlignment="Top" Background="#FF00E89E" HorizontalAlignment="Left" Width="120" Margin="884,430,0,0" BorderBrush="#FF00E89E" Height="43" >
             <StackPanel Orientation="Horizontal" Width="124">
                 <materialDesign:PackIcon Kind="TruckDelivery" Height="22" Width="31" HorizontalAlignment="Right" IsEnabled="False" Foreground="#DD000000" />
                 <TextBlock Height="16" Width="100" Text="Entregar" Foreground="#DD000000"/>

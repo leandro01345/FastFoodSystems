@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="600"
       Title="Sistema_Productos"
-      xmlns:dd="urn:gong-wpf-dragdrop" GotFocus="Page_GotFocus">
+      xmlns:dd="urn:gong-wpf-dragdrop" MouseEnter="Page_MouseEnter">
     <Page.Resources>
         <CollectionViewSource x:Key="ItemCollectionViewSource" CollectionViewType="ListCollectionView"/>
         <local:FastFoodDataSet x:Key="fastFoodDataSet"/>
@@ -20,8 +20,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <GroupBox x:Name="groupBox" Header="Resumen de orden" Margin="0,26,0,74" HorizontalAlignment="Left" Width="275" />
-        <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="315,26,42,74" Background="{x:Null}"/>
-        <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="275" Height="69" VerticalAlignment="Bottom" Background="#FF55459B"/>
+        <GroupBox x:Name="groupBox_Copy" Header="Productos online" Margin="315,26,42,74" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <GroupBox x:Name="groupBox_Copy1" Header="Total " HorizontalAlignment="Left" Width="275" Height="69" VerticalAlignment="Bottom" Background="#FF3A1313"/>
 
         <DataGrid x:Name="dg_carrito" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Producto}" 
             Margin="0,60,0,74" RowDetailsVisibilityMode="VisibleWhenSelected" IsReadOnly="True"
@@ -33,8 +33,22 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="lblPrecioTotal" Content="$0" Margin="38,0,372,37" Height="28" VerticalAlignment="Bottom" Foreground="#DDFFFFFF" FontSize="16"/>
-        <Button x:Name="btnConfirmarCompra" Content="Generar Orden" HorizontalAlignment="Left" Margin="128,0,0,10" VerticalAlignment="Bottom" Width="135" Background="#FF0D8EAA" Foreground="#FDFFFFFF" Height="34" BorderBrush="#FF0D8EAA" Click="button_Click" RenderTransformOrigin="0.267,0.426"/>
-        <Button x:Name="btnLimpiar" Content="Limpiar Orden" Margin="134,5,0,0" VerticalAlignment="Top" Background="#FF992020" Foreground="#FDFFFFFF" Height="31" BorderBrush="#FF992020" RenderTransformOrigin="0.267,0.426" HorizontalAlignment="Left" Width="141" Click="btnLimpiar_Click"/>
+        <Button x:Name="btnConfirmarCompra" Content="Generar Orden" HorizontalAlignment="Left" Margin="128,0,0,10" VerticalAlignment="Bottom" Width="135" Foreground="#FD1B1B1B" Height="34" BorderBrush="#FF0D8EAA" Click="button_Click" RenderTransformOrigin="0.267,0.426">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBEF7A9" Offset="0"/>
+                    <GradientStop Color="#FF13C6CF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnLimpiar" Content="Limpiar Orden" Margin="134,5,0,0" VerticalAlignment="Top" Foreground="#FDFFFFFF" Height="31" BorderBrush="#FF721ED6" RenderTransformOrigin="0.267,0.426" HorizontalAlignment="Left" Width="141" Click="btnLimpiar_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7F817F" Offset="0"/>
+                    <GradientStop Color="#FFE419AD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <TextBox x:Name="textBox" Margin="315,240,42,10" TextWrapping="Wrap" AcceptsReturn="True" Foreground="White" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Text="Ingresa los detalles adicionales del cliente aquí." FontSize="18"/>
         <ListBox DataContext="{StaticResource productoViewSource}" x:Name="productoListBox"  ItemsSource="{Binding}" Margin="315,60,42,74"
                 dd:DragDrop.IsDragSource="True" dd:DragDrop.IsDropTarget="False"  Foreground="WhiteSmoke" Background="#FF131313" BorderBrush="#FFFF9595" HorizontalContentAlignment="Stretch" ClipToBounds="True" FontSize="14">
@@ -49,8 +63,8 @@
                     <WrapPanel Orientation="Horizontal"/>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            
-            
+
+
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>

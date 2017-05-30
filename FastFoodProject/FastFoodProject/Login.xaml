@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastFoodProject"
         mc:Ignorable="d"
-        Title="Login" Height="364.66" Width="300" Background="#FF232523" ResizeMode="NoResize">
+        Title="Login" Height="391.66" Width="300" Background="#FF232523" ResizeMode="NoResize">
     <Grid Background="#FF232523" Margin="1,1,2,-1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Login" HorizontalAlignment="Left" Margin="82,31,0,0" VerticalAlignment="Top" Width="124" FontSize="20" FontFamily="Rockwell" BorderBrush="#FFD8C6C6" Foreground="#DDF5EFEF" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="txtUserName" Height="35" Margin="41,100,49,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFFFF2F2" FontSize="20"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="82,31,0,0" VerticalAlignment="Top" Width="124" FontSize="20" BorderBrush="#FFD8C6C6" Foreground="#DDF5EFEF" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtUserName" Height="40" Margin="41,95,49,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFFFF2F2" FontSize="20"/>
         <Label Content="UserName" HorizontalAlignment="Left" Margin="41,64,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="41,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,-0.347" Foreground="#DDF7F6F6" BorderBrush="#FFF3EEEE"/>
-        <PasswordBox x:Name="txtPwd" Margin="41,166,49,0" VerticalAlignment="Top" Height="35" Background="White" FontSize="20" KeyDown="txtPwd_KeyDown"/>
-        <Button Content="Submit" Margin="82,0,0,29" Background="#FF46434B" BorderBrush="#FF482B7A" Click="Button_Click_1" Height="41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="124"/>
-        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="41,209,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF" Width="201"/>
+        <PasswordBox x:Name="txtPwd" Margin="41,166,49,0" VerticalAlignment="Top" Height="38" Background="White" FontSize="20" KeyDown="txtPwd_KeyDown"/>
+        <Button Content="Ingresar" Margin="82,0,0,56" Background="#FF46434B" BorderBrush="#FF482B7A" Click="Button_Click_1" Height="41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="124"/>
+        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="41,220,0,0" VerticalAlignment="Top" BorderBrush="#FFF5F1F1" Foreground="#DDFFFFFF" Width="201"/>
     </Grid>
 </Window>

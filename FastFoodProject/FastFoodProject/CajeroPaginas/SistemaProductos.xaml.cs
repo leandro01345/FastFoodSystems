@@ -122,6 +122,7 @@ namespace FastFoodProject
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            triggerLimpieza();
             if (totalPagar > 0)
             {
                 if (confirmarCompra == null)
@@ -197,11 +198,26 @@ namespace FastFoodProject
 
         private void Page_GotFocus(object sender, RoutedEventArgs e)
         {
+            triggerLimpieza();
+        }
+
+        private void triggerLimpieza()
+        {
             if (triggerLimpiar)
             {
                 triggerLimpiar = false;
                 limpiar();
             }
+        }
+
+        private void Page_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void Page_MouseEnter(object sender, MouseEventArgs e)
+        {
+            triggerLimpieza();
         }
     }
 }
